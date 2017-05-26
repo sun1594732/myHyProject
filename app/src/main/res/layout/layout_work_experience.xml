@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x10"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginTop="@dimen/x30"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/work_experience_startTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="开始时间"
+            android:textColor="@color/color_9"
+            android:textSize="@dimen/y30" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x30"
+            android:text="至"
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/y30" />
+
+        <TextView
+            android:id="@+id/work_experience_endTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x30"
+            android:text="结束时间"
+            android:textColor="@color/color_9"
+            android:textSize="@dimen/y30" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@color/color_d" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x90"
+        android:layout_marginLeft="@dimen/x30"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/work_experience_jobName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入职称"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/color_3"
+            android:textColorHint="@color/color_9"
+            android:textSize="@dimen/y30" />
+
+        <View
+            android:layout_width="@dimen/x1"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/x20"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginRight="@dimen/x40"
+            android:layout_marginTop="@dimen/x20"
+            android:background="@color/color_d" />
+
+        <EditText
+            android:id="@+id/work_experience_workPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入就职小区"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/color_3"
+            android:textColorHint="@color/color_9"
+            android:textSize="@dimen/y30" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:layout_marginLeft="@dimen/x30"
+        android:background="@color/color_d" />
+
+    <EditText
+        android:id="@+id/work_experience_employeePhone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x90"
+        android:layout_marginLeft="@dimen/x30"
+        android:background="@null"
+        android:hint="请输入雇主电话"
+        android:inputType="phone"
+        android:textColor="@color/color_3"
+        android:textColorHint="@color/color_9"
+        android:textSize="@dimen/y30" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:layout_marginLeft="@dimen/x30"
+        android:background="@color/color_d" />
+</LinearLayout>

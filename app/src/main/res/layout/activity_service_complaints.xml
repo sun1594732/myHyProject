@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_service_complaints"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x30"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/x30"
+                    android:text="投诉对象"
+                    android:textColor="@color/color_5"
+                    android:textSize="@dimen/y30" />
+
+                <TextView
+                    android:id="@+id/activity_service_complaints_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="嘉家乐家政"
+                    android:textColor="@color/color_5"
+                    android:textSize="@dimen/y30" />
+            </LinearLayout>
+
+            <com.hyzs.onekeyhelp.widget.RoundImageView
+                android:id="@+id/activity_service_complaints_icon"
+                android:layout_width="@dimen/x154"
+                android:layout_height="@dimen/x154"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/x30"
+                android:layout_marginTop="@dimen/x24"
+                android:scaleType="centerCrop" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_d" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x30"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="投诉内容"
+                    android:textColor="@color/color_5"
+                    android:textSize="@dimen/y30" />
+
+                <EditText
+                    android:id="@+id/activity_service_complaints_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:background="@null"
+                    android:hint="请输入投诉内容，我们将竭诚为您服务"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textColor="@color/color_5"
+                    android:textColorHint="@color/color_9"
+                    android:textSize="@dimen/y26" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_d" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_d" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x30"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/x18"
+                    android:text="上传图片"
+                    android:textColor="@color/color_5"
+                    android:textSize="@dimen/y30" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:layout_marginTop="@dimen/x21"
+                        android:text="请上传相关图片，图片大小在5M以内"
+                        android:textColor="@color/color_9"
+                        android:textSize="@dimen/y26" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/x10"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:layout_marginRight="@dimen/x30"
+                        android:layout_marginTop="@dimen/x20"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/activity_opinion_recycler"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+
+                        </android.support.v7.widget.RecyclerView>
+
+                        <ImageView
+                            android:id="@+id/activity_opinion_add_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/tianjiazhaopian" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_d" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x30"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="手机号码"
+                    android:textColor="@color/color_5"
+                    android:textSize="@dimen/y30" />
+
+                <EditText
+                    android:id="@+id/activity_service_complaints_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:background="@null"
+                    android:hint="请输入您的手机号码"
+                    android:inputType="number"
+                    android:lineSpacingMultiplier="1.2"
+                    android:textColor="@color/color_5"
+                    android:textColorHint="@color/color_9"
+                    android:textSize="@dimen/y26" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_d" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/activity_service_complaints_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x90"
+        android:background="@color/color_1ccd9b"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="@color/color_f"
+        android:textSize="@dimen/y34" />
+</LinearLayout>

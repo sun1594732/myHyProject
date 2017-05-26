@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_company_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <include
+        android:id="@+id/activity_person_add_identity"
+        layout="@layout/activity_person_add_identity" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/activity_person_add_detail_ll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/x5"
+                    android:layout_height="@dimen/x40"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:background="@color/color_1ccd9b" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:gravity="center_vertical"
+                    android:text="个人信息"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y34" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_d" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x26"
+                    android:layout_marginTop="@dimen/x20"
+                    android:gravity="top"
+                    android:text="服务项目"
+                    android:textColor="@color/color_6"
+                    android:textSize="@dimen/y30" />
+
+                <com.hyzs.onekeyhelp.widget.GridViewForScrollView
+                    android:id="@+id/activity_person_add_project"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/x30"
+                    android:layout_weight="1"
+                    android:numColumns="2" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_d" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x26"
+                    android:gravity="center_vertical"
+                    android:text="期望月薪"
+                    android:textColor="@color/color_6"
+                    android:textSize="@dimen/y30" />
+
+                <EditText
+                    android:id="@+id/activity_person_add_salary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:hint="请输入金额"
+                    android:textColor="@color/color_6"
+                    android:textColorHint="@color/color_9"
+                    android:textSize="@dimen/y30" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_d" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x26"
+                    android:gravity="center_vertical"
+                    android:text="服务类型"
+                    android:textColor="@color/color_6"
+                    android:textSize="@dimen/y30" />
+
+                <TextView
+                    android:id="@+id/activity_person_add_serviceType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:text="请选择"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30" />
+
+                <ImageView
+                    android:layout_width="@dimen/x16"
+                    android:layout_height="@dimen/x14"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:src="@mipmap/sanjiao" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_d" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/activity_person_add_insertWorkExperience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x26"
+                    android:layout_marginTop="@dimen/x30"
+                    android:drawableBottom="@mipmap/circle_add"
+                    android:drawablePadding="@dimen/x20"
+                    android:gravity="center_vertical"
+                    android:text="工作经历"
+                    android:textColor="@color/color_6"
+                    android:textSize="@dimen/y30" />
+
+                <LinearLayout
+                    android:id="@+id/activity_person_add_workExperienceLL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include
+                        layout="@layout/layout_work_experience" />
+
+                    <ViewStub
+                        android:id="@+id/work_experience2"
+                        android:layout="@layout/layout_work_experience"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <ViewStub
+                        android:id="@+id/work_experience3"
+                        android:layout="@layout/layout_work_experience"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_d" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x26"
+                    android:layout_marginTop="@dimen/x30"
+                    android:gravity="center_vertical"
+                    android:text="手机号码"
+                    android:textColor="@color/color_6"
+                    android:textSize="@dimen/y30" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x90"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/activity_person_add_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:hint="请输入手机号"
+                            android:inputType="phone"
+                            android:maxLength="11"
+                            android:textColor="@color/color_3"
+                            android:textColorHint="@color/color_9"
+                            android:textSize="@dimen/y30" />
+
+                        <TextView
+                            android:id="@+id/activity_person_add_getCode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/x30"
+                            android:gravity="center"
+                            android:text="获取验证码"
+                            android:textColor="@color/color_1ccd9b"
+                            android:textSize="@dimen/y30" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x1"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:background="@color/color_d" />
+
+                    <EditText
+                        android:id="@+id/activity_person_add_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/x90"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:background="@null"
+                        android:maxLength="4"
+                        android:inputType="number"
+                        android:hint="请输入验证码"
+                        android:textColor="@color/color_3"
+                        android:textColorHint="@color/color_9"
+                        android:textSize="@dimen/y30" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_d" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/activity_person_add_submit"
+                android:layout_width="@dimen/x280"
+                android:layout_height="@dimen/x60"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/x60"
+                android:layout_marginTop="@dimen/x30"
+                android:background="@drawable/shape_1ccd9b_6_soild"
+                android:gravity="center"
+                android:text="完成"
+                android:textColor="@color/color_f"
+                android:textSize="@dimen/y34" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

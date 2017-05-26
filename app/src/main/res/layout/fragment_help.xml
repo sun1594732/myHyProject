@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/help_ll_title"
+        layout="@layout/toolbar" />
+
+
+    <RelativeLayout
+        android:layout_below="@id/help_ll_title"
+        android:id="@+id/help_rl_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_f" >
+
+        <com.hyzs.onekeyhelp.widget.SyncHorizontalScrollView
+            android:id="@+id/help_mHsv"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/x70"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <RelativeLayout
+                android:id="@+id/help_rl_nav"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="@color/color_f" >
+
+                <RadioGroup
+                    android:id="@+id/help_rg_nav_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/x70"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/color_f"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+                </RadioGroup>
+
+                <ImageView
+                    android:id="@+id/help_iv_nav_indicator"
+                    android:layout_width="@dimen/y2"
+                    android:layout_height="@dimen/y4"
+                    android:layout_alignParentBottom="true"
+                    android:background="#1CCD9B"
+                    android:contentDescription="nav_desc"
+                    android:scaleType="matrix" />
+            </RelativeLayout>
+        </com.hyzs.onekeyhelp.widget.SyncHorizontalScrollView>
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/help_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+        <TextView
+            android:id="@+id/help_list_confirm"
+            android:layout_width="match_parent"
+            android:textColor="@color/color_f"
+            android:text="发布求助"
+            android:gravity="center"
+            android:background="@color/color_1ccd9b"
+            android:textSize="@dimen/y30"
+            android:layout_height="@dimen/x80" />
+
+</LinearLayout>

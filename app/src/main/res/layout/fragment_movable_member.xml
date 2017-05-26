@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/color_f"
+    android:layout_height="match_parent">
+
+
+    <ListView
+        android:id="@+id/movable_member_list"
+        android:layout_width="match_parent"
+        android:divider="@color/color_f4"
+        android:dividerHeight="@dimen/x2"
+        android:scrollbars="none"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>

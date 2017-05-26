@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/item_tel_import_icon"
+        android:layout_width="@dimen/x90"
+        android:layout_height="@dimen/x90"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="@dimen/x30"
+        android:src="@mipmap/beauty" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x150"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/x30"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/item_movable_dynamic_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x5"
+                android:text="白富美"
+                android:textColor="@color/color_4"
+                android:textSize="@dimen/y30" />
+
+            <ImageView
+                android:id="@+id/item_movable_dynamic_iv_idcard"
+                android:layout_width="@dimen/x50"
+                android:layout_height="@dimen/x40"
+                android:layout_marginLeft="@dimen/x10"
+                android:layout_marginTop="@dimen/x1"
+                android:src="@mipmap/identity"
+
+                />
+
+            <TextView
+                android:id="@+id/item_movable_dynamic_tv_zheng"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:layout_marginLeft="@dimen/x12"
+                android:layout_marginTop="@dimen/x3"
+                android:background="@drawable/shape_f81302_zheng"
+                android:gravity="center"
+                android:text="证"
+                android:textColor="@color/color_f"
+                android:textSize="@dimen/y20"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_movable_dynamic_tv_info"
+            android:layout_width="@dimen/x530"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x20"
+            android:lineSpacingExtra="@dimen/x10"
+            android:text="今天的八达岭长城这的是太热闹了，人山人海啊这次活动太有意思了下次还要来参加"
+            android:textColor="@color/color_4"
+            android:textSize="@dimen/y26" />
+
+        <LinearLayout
+            android:id="@+id/item_movable_dynamic_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x10"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/item_movable_ll_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x10"
+                android:orientation="horizontal"
+
+                >
+
+                <ImageView
+                    android:id="@+id/item_movable_pirc1"
+                    android:layout_width="@dimen/x130"
+                    android:layout_height="@dimen/x135"
+                    android:scaleType="center"
+                    android:src="@mipmap/icon_replace" />
+
+                <ImageView
+                    android:id="@+id/item_movable_pirc2"
+                    android:layout_width="@dimen/x130"
+                    android:layout_height="@dimen/x135"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:scaleType="center"
+                    android:src="@mipmap/icon_replace" />
+
+                <ImageView
+                    android:id="@+id/item_movable_pirc3"
+                    android:layout_width="@dimen/x130"
+                    android:layout_height="@dimen/x135"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:scaleType="center"
+                    android:src="@mipmap/icon_replace" />
+
+                <ImageView
+                    android:id="@+id/item_movable_pirc4"
+                    android:layout_width="@dimen/x130"
+                    android:layout_height="@dimen/x135"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:scaleType="center"
+                    android:src="@mipmap/icon_replace" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item_movable_ll_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+
+                >
+
+                <ImageView
+                    android:id="@+id/item_movable_pirc5"
+                    android:layout_width="@dimen/x130"
+                    android:layout_height="@dimen/x135"
+                    android:scaleType="center"
+                    android:src="@mipmap/icon_replace" />
+
+                <ImageView
+                    android:id="@+id/item_movable_pirc6"
+                    android:layout_width="@dimen/x130"
+                    android:layout_height="@dimen/x135"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:scaleType="center"
+                    android:src="@mipmap/icon_replace" />
+
+                <ImageView
+                    android:id="@+id/item_movable_pirc7"
+                    android:layout_width="@dimen/x130"
+                    android:layout_height="@dimen/x135"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:scaleType="center"
+                    android:src="@mipmap/icon_replace"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/item_movable_pirc8"
+                    android:layout_width="@dimen/x130"
+                    android:layout_height="@dimen/x135"
+                    android:layout_marginLeft="@dimen/x10"
+
+                    android:scaleType="center"
+                    android:src="@mipmap/icon_replace"
+
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_movable_dynamic_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x30"
+            android:layout_marginTop="@dimen/x20"
+            android:text="2017-3-17 12:59"
+            android:textColor="@color/color_9"
+            android:textSize="@dimen/y26" />
+    </LinearLayout>
+</RelativeLayout>

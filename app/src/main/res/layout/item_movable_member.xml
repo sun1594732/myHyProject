@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x156"
+    android:background="@color/color_f"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/item_mavable_member_icon"
+        android:layout_width="@dimen/x110"
+        android:layout_height="@dimen/x110"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="@dimen/x26"
+        android:layout_marginBottom="@dimen/x26"
+        android:src="@mipmap/beauty" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x20"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_mavable_member_sponsor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="组织人"
+            android:textColor="@color/color_9"
+            android:textSize="@dimen/y26" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_mavable_member_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="白富美"
+                android:textColor="@color/color_525151"
+                android:textSize="@dimen/y30" />
+
+            <ImageView
+                android:id="@+id/item_mavable_member_rnc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x12"
+                android:src="@mipmap/identity" />
+
+            <TextView
+                android:id="@+id/item_mavable_member_zheng"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:layout_marginLeft="@dimen/x12"
+                android:background="@drawable/shape_f81302_zheng"
+                android:paddingBottom="@dimen/x2"
+                android:paddingLeft="@dimen/x6"
+                android:paddingRight="@dimen/x6"
+                android:paddingTop="@dimen/x2"
+                android:text="证"
+                android:textColor="@color/color_f"
+                android:textSize="@dimen/y20"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/item_mavable_member_juweihui"
+                android:layout_width="@dimen/x73"
+                android:layout_height="@dimen/x28"
+                android:layout_marginLeft="@dimen/x12"
+                android:background="@mipmap/jvweihui" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x14"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_mavable_member_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部成员50人"
+                android:textColor="@color/color_6"
+                android:textSize="@dimen/y26" />
+
+            <TextView
+                android:id="@+id/item_mavable_member_district"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="康惠园小区"
+                android:layout_marginLeft="@dimen/x12"
+                android:textColor="@color/color_9"
+                android:textSize="@dimen/y26" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/x2"
+        android:layout_weight="1"
+        android:id="@+id/view3" />
+
+    <ImageView
+        android:id="@+id/item_mavable_member_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/x34"
+        android:src="@mipmap/talk" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/x30"
+        android:src="@mipmap/youjiantou" />
+
+</LinearLayout>

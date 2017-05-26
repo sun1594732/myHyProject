@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="@dimen/x176"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <com.hyzs.onekeyhelp.widget.RoundImageView
+                android:id="@+id/item_car_resuce_myresuce_iv_face"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="@dimen/x30"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_width="@dimen/x111"
+                android:src="@mipmap/icon_replace"
+                android:layout_height="@dimen/x111" />
+
+            <TextView
+                android:id="@+id/item_car_resuce_myresuce_tv_state"
+
+                android:layout_marginTop="@dimen/x10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="等待救援"
+                android:gravity="center_horizontal"
+                android:textColor="#f7221d"
+                android:textSize="@dimen/x26"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/item_car_resuce_myresuce_tv_name"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#444"
+                    android:text="张女士"
+                    android:textSize="@dimen/y30"
+                    android:layout_marginTop="@dimen/x30"
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/x50"
+                    android:layout_height="@dimen/x40"
+                    android:layout_marginTop="@dimen/x27"
+                    android:src="@mipmap/identity"
+                    android:layout_marginLeft="@dimen/x10"
+
+                    android:id="@+id/item_car_resuce_myresuce_iv_identity"
+
+                    />
+
+                <TextView
+                    android:id="@+id/item_car_resuce_myresuce_tv_zheng"
+                    android:layout_width="@dimen/x30"
+                    android:layout_height="@dimen/x30"
+
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_marginTop="@dimen/x24"
+                    android:background="@drawable/shape_f81302_zheng"
+                    android:gravity="center"
+                    android:text="证"
+                    android:textColor="@color/color_f"
+                    android:textSize="@dimen/y20"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:paddingTop="@dimen/x40"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="收到的帮助：125"
+                    android:gravity="right"
+                    android:textColor="#4444"
+                    android:textSize="@dimen/y26"
+                    android:layout_marginRight="@dimen/x30"
+                    android:id="@+id/item_car_resuce_myresuce_tv_help"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/x20"
+                >
+             <ImageView
+                android:layout_width="@dimen/x23"
+                android:layout_height="@dimen/x23"
+                android:src="@drawable/jingshi"
+                 android:layout_marginTop="@dimen/x2"
+            />
+
+                <TextView
+                    android:id="@+id/item_car_resuce_myresuce_tv_info"
+
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_marginRight="@dimen/x30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#444444"
+                    android:textSize="@dimen/x26"
+                    android:lines="2"
+                    android:ellipsize="end"
+                    android:text="您的救援信息已经成功发给了您的紧急联系人、附近的人、救援机构和环宇客服，客服会尽快与您取得联系."
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/x20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/x23"
+                    android:layout_height="@dimen/x23"
+                    android:src="@drawable/shijian"
+                    android:layout_marginTop="@dimen/x2"
+                    />
+                <TextView
+                    android:id="@+id/item_car_resuce_myresuce_tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017-3-7 11:25"
+                    android:textColor="#444"
+                    android:textSize="@dimen/y26"
+                    android:layout_marginLeft="@dimen/x10"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/item_car_resuce_myresuce_tv_money"
+
+                    android:gravity="right"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="酬谢 999 元"
+                    android:layout_marginRight="@dimen/x30"
+                    android:textColor="#444"
+                    android:textSize="@dimen/y26"
+
+                    />
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#f4f4f4"
+        android:layout_marginTop="@dimen/x30"
+
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/head_view" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x10"
+                android:background="@color/color_f4f4f4" />
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x340"
+                android:visibility="gone">
+
+            </com.daimajia.slider.library.SliderLayout>
+
+            <com.daimajia.slider.library.Indicators.PagerIndicator
+                android:id="@+id/custom_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-20dp"
+                android:gravity="center"
+                android:visibility="gone"
+                custom:selected_color="@color/color_dd4337"
+                custom:selected_height="@dimen/x20"
+                custom:selected_padding_left="@dimen/x15"
+                custom:selected_padding_right="@dimen/x15"
+                custom:selected_width="@dimen/x20"
+                custom:shape="oval"
+                custom:unselected_color="@color/color_9"
+                custom:unselected_height="@dimen/x20"
+                custom:unselected_padding_left="@dimen/x15"
+                custom:unselected_padding_right="@dimen/x15"
+                custom:unselected_width="@dimen/x20" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/movable_details_icon"
+                    android:layout_width="@dimen/x120"
+                    android:layout_height="@dimen/x120"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x30" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/movable_details_sponsor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/x20"
+                            android:text="发起人"
+                            android:textColor="@color/color_6"
+                            android:textSize="@dimen/y26"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/movable_details_juweihui"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/x20"
+                            android:src="@mipmap/jvweihui" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x12"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/movable_details_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="白富美"
+                            android:textColor="@color/color_3"
+                            android:textSize="@dimen/x30" />
+
+                        <ImageView
+                            android:id="@+id/movable_details_rna"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/x10"
+                            android:layout_marginTop="@dimen/x5"
+                            android:src="@mipmap/identity" />
+
+                        <TextView
+                            android:id="@+id/movable_details_zheng"
+                            android:layout_width="@dimen/x30"
+                            android:layout_height="@dimen/x30"
+                            android:layout_marginLeft="@dimen/x4"
+                            android:background="@drawable/shape_f81302_zheng"
+                            android:paddingBottom="@dimen/x2"
+                            android:paddingLeft="@dimen/x6"
+                            android:paddingRight="@dimen/x6"
+                            android:paddingTop="@dimen/x2"
+                            android:text="证"
+                            android:textColor="@color/color_f"
+                            android:textSize="@dimen/y20"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x20">
+
+                        <TextView
+                            android:id="@+id/movable_details_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2017-3-17"
+                            android:textColor="@color/color_6"
+                            android:textSize="@dimen/y26" />
+
+                        <TextView
+                            android:id="@+id/movable_details_district"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/x40"
+                            android:text="康惠园小区"
+                            android:textColor="@color/color_6"
+                            android:textSize="@dimen/y26" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x30"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/movable_details_jinxingzhong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x44"
+                        android:text="报名进行中...."
+                        android:textColor="@color/color_f7221d"
+                        android:textSize="@dimen/y26" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x20"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="最大人数："
+                            android:textColor="@color/color_9"
+                            android:textSize="@dimen/y26" />
+
+                        <TextView
+                            android:id="@+id/movable_details_people_max"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20人"
+                            android:textColor="@color/color_f7221d"
+                            android:textSize="@dimen/y26" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="已报人数："
+                            android:textColor="@color/color_9"
+                            android:textSize="@dimen/y26" />
+
+                        <TextView
+                            android:id="@+id/movable_details_curr_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12人"
+                            android:textColor="@color/color_f7221d"
+                            android:textSize="@dimen/y26" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x10"
+                android:background="@color/color_f4f4f4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x70"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x70"
+                    android:text="主题："
+                    android:textColor="@color/color_4"
+                    android:textSize="@dimen/y26" />
+
+                <TextView
+                    android:id="@+id/movable_details_theme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本周末31日全天寻好朋友组团爬长城！"
+                    android:textColor="@color/color_4"
+                    android:textSize="@dimen/y30" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x10"
+                android:background="@color/color_f4f4f4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/x30"
+                android:paddingRight="@dimen/x30"
+                android:paddingTop="@dimen/x20">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动行程："
+                    android:textColor="@color/color_4"
+                    android:textSize="@dimen/y26" />
+
+                <TextView
+                    android:id="@+id/movable_details_stroke"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="早上爬山 中午在山上吃饭。晚上回家。早上爬山 中午在山上吃饭。晚上回家。"
+                    android:textColor="@color/color_2e2e2e"
+                    android:textSize="@dimen/y30" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x143"
+                android:layout_marginTop="@dimen/x20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报名开始："
+                    android:textColor="@color/color_f7221d"
+                    android:textSize="@dimen/y26" />
+
+                <TextView
+                    android:id="@+id/movable_details_regist_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017-3-30 18:00"
+                    android:textColor="@color/color_4"
+                    android:textSize="@dimen/y26" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x143">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报名截止："
+                    android:textColor="@color/color_f7221d"
+                    android:textSize="@dimen/y26" />
+
+                <TextView
+                    android:id="@+id/movable_details_regist_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017-3-30 18:00"
+                    android:textColor="@color/color_4"
+                    android:textSize="@dimen/y26" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x143">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动时间："
+                    android:textColor="@color/color_f7221d"
+                    android:textSize="@dimen/y26" />
+
+                <TextView
+                    android:id="@+id/movable_details_m_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017-3-29至2017-3-30"
+                    android:textColor="@color/color_4"
+                    android:textSize="@dimen/y26" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x20"
+                android:layout_marginLeft="@dimen/x143">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动地点："
+                    android:textColor="@color/color_f7221d"
+                    android:textSize="@dimen/y26" />
+
+                <TextView
+                    android:id="@+id/movable_details_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="八达岭长城"
+                    android:textColor="@color/color_4"
+                    android:textSize="@dimen/y26" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x10"
+                android:background="@color/color_f4f4f4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x75"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:text="活动路线："
+                    android:textColor="@color/color_4"
+                    android:textSize="@dimen/y26" />
+
+                <TextView
+                    android:id="@+id/movable_details_route"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_4"
+                    android:textSize="@dimen/y30" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/x710"
+                android:layout_height="@dimen/x2"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/color_f4f4f4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x66"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:text="报名范围："
+                    android:textColor="@color/color_4"
+                    android:textSize="@dimen/y26" />
+
+                <TextView
+                    android:id="@+id/movable_details_condition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_4"
+                    android:textSize="@dimen/y30" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/x710"
+                android:layout_height="@dimen/x2"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/color_f4f4f4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/x20"
+                android:paddingTop="@dimen/x20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:text="所需装备："
+                    android:textColor="@color/color_4"
+                    android:textSize="@dimen/y26" />
+
+                <TextView
+                    android:id="@+id/movable_details_equip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x30"
+                    android:textColor="@color/color_4"
+                    android:textSize="@dimen/y30" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/x710"
+                android:layout_height="@dimen/x2"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/color_f4f4f4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/x20"
+                android:paddingTop="@dimen/x20">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:text="注意事项："
+                    android:textColor="@color/color_4"
+                    android:textSize="@dimen/y26" />
+
+                <TextView
+                    android:id="@+id/movable_details_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x30"
+                    android:text=""
+                    android:textColor="@color/color_4"
+                    android:textSize="@dimen/y30" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x10"
+                android:background="@color/color_f4f4f4" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/movable_details_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x80"
+        android:background="@color/color_1ccd9b"
+        android:gravity="center"
+        android:text="我要报名"
+        android:textColor="@color/color_f"
+        android:textSize="@dimen/y34" />
+</LinearLayout>

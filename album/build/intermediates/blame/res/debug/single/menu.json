@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "F:\\Studio\\hyProject\\hybbproject\\myHybb\\album\\build\\intermediates\\res\\merged\\debug\\menu\\menu_activity_album.xml",
+        "source": "F:\\Studio\\hyProject\\hybbproject\\myHybb\\album\\src\\main\\res\\menu\\menu_activity_album.xml"
+    },
+    {
+        "merged": "F:\\Studio\\myHybb\\album\\build\\intermediates\\res\\merged\\debug\\menu\\menu_activity_album.xml",
+        "source": "F:\\Studio\\myHybb\\album\\src\\main\\res\\menu\\menu_activity_album.xml"
+    },
+    {
+        "merged": "F:\\Studio\\hyProject\\hybbproject\\myHybb\\album\\build\\intermediates\\res\\merged\\debug\\menu\\menu_dialog_album.xml",
+        "source": "F:\\Studio\\hyProject\\hybbproject\\myHybb\\album\\src\\main\\res\\menu\\menu_dialog_album.xml"
+    },
+    {
+        "merged": "F:\\Studio\\myHybb\\album\\build\\intermediates\\res\\merged\\debug\\menu\\menu_dialog_album.xml",
+        "source": "F:\\Studio\\myHybb\\album\\src\\main\\res\\menu\\menu_dialog_album.xml"
+    }
+]

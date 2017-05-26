@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f4"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x90"
+        android:background="@color/color_f">
+
+        <ImageView
+            android:id="@+id/iv_rec_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/x20"
+            android:src="@drawable/back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="账户充值"
+            android:textColor="@color/color_0"
+            android:textSize="@dimen/y30"/>
+
+        <TextView
+            android:id="@+id/tv_rec_history"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:visibility="gone"
+            android:padding="@dimen/x18"
+            android:text="充值记录"
+            android:textColor="@color/color_1ccd9b"
+            android:textSize="@dimen/y30"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/color_d2c"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_rec_mode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x140"
+        android:layout_marginTop="@dimen/x36"
+        android:background="@color/color_f"
+        android:paddingBottom="@dimen/x10"
+        android:paddingTop="@dimen/x10">
+
+        <ImageView
+            android:id="@+id/tv_rec_mode_icon"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/x100"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:src="@drawable/zhifubao_logo"/>
+
+        <TextView
+            android:id="@+id/tv_rec_mode_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x18"
+            android:layout_marginTop="@dimen/x18"
+            android:layout_toRightOf="@id/tv_rec_mode_icon"
+            android:text="支付宝支付"
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/y30"/>
+
+        <TextView
+            android:id="@+id/tv_rec_mode_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/x18"
+            android:layout_marginLeft="@dimen/x18"
+            android:layout_toRightOf="@id/tv_rec_mode_icon"
+            android:text="亿万用户的选择，更快更安全"
+            android:textColor="@color/color_6"
+            android:textSize="@dimen/y30"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x20"
+            android:src="@mipmap/youjiantou"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100"
+        android:layout_marginTop="@dimen/x30"
+        android:background="@color/color_f">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x16"
+            android:background="@color/color_f"
+            android:gravity="center_vertical"
+            android:text="金额"
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/y30"/>
+
+        <EditText
+            android:id="@+id/et_rec_num"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:digits="1234567890."
+            android:hint="请输入充值金额"
+            android:maxLength="8"
+            android:textColor="@color/color_0"
+            android:textCursorDrawable="@null"
+            android:textColorHint="@color/color_6"
+            android:textSize="@dimen/y26"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_rec_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x80"
+        android:layout_margin="@dimen/x30"
+        android:background="@drawable/shape_1ccd9b_6_soild"
+        android:textSize="@dimen/y30"
+        android:text="确认充值"
+        android:textColor="@color/color_f"/>
+
+</LinearLayout>

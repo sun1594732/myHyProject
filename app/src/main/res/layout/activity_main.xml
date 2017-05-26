@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/color_dfd"/>
+    <RadioGroup
+        android:id="@+id/rg_main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x94"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_main_home"
+            style="@style/main_bottom_style"
+            android:layout_width="@dimen/x125"
+            android:drawableTop="@drawable/rb_home_bg_selector"
+            android:text="社区首页"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rb_main_community"
+            style="@style/main_bottom_style"
+            android:layout_width="@dimen/x125"
+            android:drawableTop="@drawable/rb_community_bg_selector"
+            android:text="家庭"/>
+
+
+        <Button
+            android:id="@+id/rb_main_help"
+            style="@style/main_bottom_style"
+            android:layout_width="@dimen/x219"
+            android:drawableTop="@mipmap/grade"
+            android:background="@color/color_fb202b"
+            android:textColor="#fff"
+            android:text="一键帮助"
+            android:textSize="@dimen/y30"/>
+
+        <FrameLayout
+            android:id="@+id/rb_main_contact_frame"
+            android:layout_width="@dimen/x125"
+            android:layout_height="match_parent">
+        <RadioButton
+            android:id="@+id/rb_main_contact"
+            style="@style/main_bottom_style"
+            android:layout_width="@dimen/x125"
+            android:drawableTop="@drawable/rb_contact_bg_selector"
+            android:text="好友"/>
+            <TextView
+                android:id="@+id/rb_main_contact_pop"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:layout_marginLeft="@dimen/x80"
+                android:background="@drawable/shape_qipao"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="@dimen/y18"
+                android:textStyle="bold" />
+        </FrameLayout>
+        <RadioButton
+            android:id="@+id/rb_main_mine"
+            style="@style/main_bottom_style"
+            android:layout_width="@dimen/x125"
+            android:drawableTop="@drawable/rb_mine_bg_selector"
+            android:text="我的"/>
+
+    </RadioGroup>
+</LinearLayout>

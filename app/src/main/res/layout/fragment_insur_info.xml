@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x82"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/baoxianren"
+            android:drawablePadding="@dimen/x20"
+            android:text="被保险人："
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/y30" />
+
+        <EditText
+            android:id="@+id/insur_info_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x10"
+            android:background="@null"
+            android:hint="请输入"
+            android:singleLine="true"
+            android:textColor="@color/color_3"
+            android:textColorHint="@color/color_9"
+            android:textSize="@dimen/y30" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:layout_marginLeft="@dimen/x68"
+        android:layout_marginRight="@dimen/x30"
+        android:background="#dddddd" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x82"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/baoxiandanhao"
+            android:drawablePadding="@dimen/x18"
+            android:text="保险公司："
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/y30" />
+
+        <TextView
+            android:id="@+id/insur_info_compa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x10"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="请输入"
+            android:textColor="@color/color_9"
+            android:textSize="@dimen/y30" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:layout_marginLeft="@dimen/x68"
+        android:layout_marginRight="@dimen/x30"
+        android:background="#dddddd" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x82"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/baoxiandanhao"
+            android:drawablePadding="@dimen/x18"
+            android:text="保险单号："
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/y30" />
+
+        <EditText
+            android:id="@+id/insur_info_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x10"
+            android:background="@null"
+            android:hint="请输入"
+            android:singleLine="true"
+            android:textColor="@color/color_3"
+            android:textColorHint="@color/color_9"
+            android:textSize="@dimen/y30" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:layout_marginLeft="@dimen/x68"
+        android:layout_marginRight="@dimen/x30"
+        android:background="#dddddd" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x82"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/youxiaoriqi"
+            android:drawablePadding="@dimen/x17"
+            android:text="有效日期："
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/y30" />
+
+        <LinearLayout
+            android:id="@+id/insur_info_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/insur_info_left_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="2017-01-15"
+                android:textColor="@color/color_3"
+                android:textSize="@dimen/y30" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/x20"
+                android:src="@mipmap/xiajiantou" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:text="至"
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/y26" />
+
+        <LinearLayout
+            android:id="@+id/insur_info_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/insur_info_right_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="2017-01-15"
+                android:textColor="@color/color_3"
+                android:textSize="@dimen/y30" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/x20"
+                android:src="@mipmap/xiajiantou" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:layout_marginLeft="@dimen/x68"
+        android:layout_marginRight="@dimen/x30"
+        android:background="#dddddd" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x82"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/baoxianleixing"
+            android:drawablePadding="@dimen/x18"
+            android:text="保险类型："
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/y30" />
+
+        <EditText
+            android:id="@+id/insur_info_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x10"
+            android:background="@null"
+            android:hint="请输入“0”交强险或“1”交强+商业险"
+            android:inputType="number"
+            android:maxLength="1"
+            android:digits="01"
+            android:singleLine="true"
+            android:textColor="@color/color_3"
+            android:textColorHint="@color/color_9"
+            android:textSize="@dimen/y30" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x6"
+        android:background="#dddddd" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x30"
+            android:layout_marginTop="@dimen/x30"
+            android:text="车辆保险信息列表"
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/y30" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/color_9" />
+
+    <com.hyzs.onekeyhelp.widget.view.VRefresh
+        android:id="@+id/fragment_insur_info_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/insur_info_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/color_9"
+            android:dividerHeight="@dimen/x1"
+            android:scrollbars="none">
+        </ListView>
+    </com.hyzs.onekeyhelp.widget.view.VRefresh>
+</LinearLayout>

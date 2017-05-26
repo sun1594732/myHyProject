@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f">
+
+    <LinearLayout
+        android:id="@+id/fragment_home_viewstub1_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x70"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/fragment_home_viewstub1_row"
+            android:layout_width="@dimen/x4"
+            android:layout_height="@dimen/x30"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x20"
+            android:background="@color/color_ff3d2f" />
+
+        <TextView
+            android:id="@+id/fragment_home_viewstub1_title"
+            style="@style/y34text"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x90"
+            android:gravity="center"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x30"
+            android:text="社区公告"
+            android:textColor="@color/color_ff3d2f" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/x1"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/fragment_home_viewstub1_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x30"
+            android:drawablePadding="@dimen/x10"
+            android:drawableRight="@mipmap/youjiantou"
+            android:text="更多"
+            android:textSize="@dimen/y26"
+            android:textColor="@color/color_9" />
+    </LinearLayout>
+    <View
+        android:id="@+id/fragment_home_viewstub1_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x2"
+        android:background="@color/color_ff3d2f"/>
+    <com.hyzs.onekeyhelp.widget.ListViewForScrollView
+        android:id="@+id/fragment_home_viewstub1_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/color_d2c"
+        android:dividerHeight="@dimen/x1"/>
+</LinearLayout>

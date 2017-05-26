@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/item_circle_detail_comment_icon"
+        android:layout_width="@dimen/x60"
+        android:layout_height="@dimen/x60"
+        android:layout_marginBottom="@dimen/x36"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginTop="@dimen/x30"
+        android:src="@mipmap/replace_hybb" />
+
+    <TextView
+        android:id="@+id/item_circle_detail_comment_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x26"
+        android:text="花无缺"
+        android:textColor="@color/color_3"
+        android:textSize="@dimen/y30"
+        android:layout_toRightOf="@+id/item_circle_detail_comment_icon"
+        android:layout_marginLeft="@dimen/x20"/>
+
+    <TextView
+        android:id="@+id/item_circle_detail_comment_praise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textSize="@dimen/y26"
+        android:textColor="@color/color_6"
+        android:drawableLeft="@mipmap/dianzan"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/x34"
+        android:layout_marginRight="@dimen/x20"
+        android:drawablePadding="@dimen/x10"/>
+    <TextView
+        android:id="@+id/item_circle_detail_comment_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="19楼  15:10"
+        android:textSize="@dimen/y26"
+        android:textColor="@color/color_6"
+        android:layout_below="@+id/item_circle_detail_comment_name"
+        android:layout_alignLeft="@+id/item_circle_detail_comment_name"/>
+
+    <TextView
+        android:id="@+id/item_circle_detail_comment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="花无缺"
+        android:layout_marginTop="@dimen/x16"
+        android:layout_below="@+id/item_circle_detail_comment_time"
+        android:textColor="@color/color_3"
+        android:textSize="@dimen/y30"
+        android:layout_toRightOf="@+id/item_circle_detail_comment_icon"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x10"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x2"
+        android:background="@color/color_df"
+        android:layout_below="@+id/item_circle_detail_comment_content"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_alignLeft="@+id/item_circle_detail_comment_content"
+        android:layout_marginBottom="@dimen/x4"
+        android:layout_marginRight="@dimen/x20"/>
+
+    <TextView
+        android:id="@+id/item_circle_detail_comment_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x25"
+        android:background="@drawable/shape_1ccd9b_6_soild"
+        android:drawableLeft="@mipmap/man"
+        android:paddingRight="@dimen/x6"
+        android:layout_marginLeft="@dimen/x10"
+        android:drawablePadding="@dimen/x4"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x6"
+        android:textSize="@dimen/y20"
+        android:text="男"
+        android:layout_alignTop="@+id/item_circle_detail_comment_icon"
+        android:layout_toRightOf="@+id/item_circle_detail_comment_name"
+        android:layout_toEndOf="@+id/item_circle_detail_comment_name" />
+</RelativeLayout>

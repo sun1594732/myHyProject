@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_emergency_rescue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_f"
+    tools:context="com.hyzs.onekeyhelp.carresuce.view.EmergencyRescueActivity">
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_marginRight="@dimen/x30"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="@dimen/x28"
+                android:layout_height="@dimen/x28"
+                android:background="@drawable/xiangqing"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/x3"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="详情"
+                android:layout_marginLeft="@dimen/x30"
+                android:textColor="#444"
+                android:textSize="@dimen/y26"
+                />
+
+            <EditText
+                android:background="@null"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/my_resuce_details_tv_context"
+                android:layout_marginLeft="@dimen/x30"
+                android:textColorHint="#999999"
+                android:hint="请输入详细信息，限定五十个字以内"
+                android:maxLength="100"
+                android:textColor="#444444"
+                android:textSize="@dimen/y26"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/activity_emergency_rescue_nonePic"
+
+            android:layout_width="@dimen/x118"
+            android:layout_height="@dimen/x118"
+            android:layout_marginLeft="@dimen/x160"
+            android:layout_marginTop="@dimen/x30"
+            android:background="@drawable/stoken_photo"
+            android:src="@mipmap/default_photo" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_marginLeft="@dimen/x160"
+            android:id="@+id/activity_emergency_rescue_recycler"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d2d2d2"
+            android:layout_marginLeft="@dimen/x160"
+            android:layout_marginTop="@dimen/x20"
+            ></View>
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/ll_select_car"
+            android:layout_marginTop="@dimen/x20"
+            >
+            <ImageView
+                android:layout_width="@dimen/x28"
+                android:layout_height="@dimen/x28"
+                android:background="@drawable/cheliang"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/x3"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车辆"
+                android:layout_marginLeft="@dimen/x30"
+                android:textColor="#444"
+                android:textSize="@dimen/y26"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="待选择"
+                android:layout_marginLeft="@dimen/x30"
+                android:textColor="#444"
+                android:ellipsize="end"
+                android:textSize="@dimen/y26"
+                android:id="@+id/my_resuce_details_tv_car_type"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d2d2d2"
+            android:layout_marginLeft="@dimen/x160"
+            android:layout_marginTop="@dimen/x20"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/x20"
+            >
+            <ImageView
+                android:layout_width="@dimen/x28"
+                android:layout_height="@dimen/x28"
+                android:background="@drawable/weizhi"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/x3"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="位置"
+                android:layout_marginLeft="@dimen/x30"
+                android:textColor="#444"
+                android:textSize="@dimen/y26"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GPS 位置已发送，请您对当前位置进行详细描述。"
+                android:layout_marginLeft="@dimen/x30"
+                android:textColor="#f60404"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textSize="@dimen/x26"
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/my_resuce_details_tv_address"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:textColor="#999999"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/x18"
+                    />
+                <EditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/my_resuce_details_tv_editText"
+                    android:hint="限定五十字内"
+                    android:maxLength="100"
+                    android:textColor="#999999"
+                    android:background="@null"
+                    android:textColorHint="#999999"
+                    android:textSize="@dimen/y26"
+                    android:layout_marginLeft="@dimen/x30"
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d2d2d2"
+            android:layout_marginLeft="@dimen/x160"
+            android:layout_marginTop="@dimen/x20"
+            ></View>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/x20"
+            >
+            <ImageView
+                android:layout_width="@dimen/x28"
+                android:layout_height="@dimen/x28"
+                android:background="@drawable/dashang"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/x3"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="打赏"
+                android:layout_marginLeft="@dimen/x30"
+                android:textColor="#444"
+                android:textSize="@dimen/y26"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请输入打赏金额"
+                android:id="@+id/my_resuce_details_tv_thank_money"
+
+                android:layout_marginLeft="@dimen/x30"
+                android:textColor="#999999"
+                android:ellipsize="end"
+                android:textSize="@dimen/y26"
+                />
+
+            <LinearLayout
+                android:layout_width="@dimen/x250"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/x20"
+                android:id="@+id/live_help_other_details_item_ll_calculate_money"
+                >
+
+                <ImageView
+                    android:layout_width="@dimen/x35"
+                    android:layout_height="@dimen/x30"
+                    android:background="@drawable/selector_life_details_item_text_background"
+                    android:id="@+id/emergency_iv_subtract" />
+
+                <EditText
+                    android:layout_width="@dimen/x86"
+                    android:layout_height="@dimen/x30"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:background="#d7d7d7"
+                    android:id="@+id/emergency_et_money"
+                    android:gravity="center"
+                    android:textSize="@dimen/x25"
+                    android:textColor="#999999"
+                    android:textColorHint="#999999"
+                    android:hint="0"
+                    />
+
+                <ImageView
+                    android:id="@+id/emergency_iv_add"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_width="@dimen/x35"
+                    android:layout_height="@dimen/x30"
+                    android:background="@drawable/selector_life_details_item_text"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+
+    <TextView
+        android:layout_gravity="bottom"
+
+        android:id="@+id/emergency_tv_confirm_help"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x80"
+        android:background="#1ccd98"
+        android:text="保存"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="@dimen/y30"
+        />
+
+    </LinearLayout>
+
+
+</LinearLayout>

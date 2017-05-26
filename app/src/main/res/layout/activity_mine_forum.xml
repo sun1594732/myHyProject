@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mine_forum"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+
+    tools:context="com.hyzs.onekeyhelp.mine.forum.MineForumActivity">
+
+    <include layout="@layout/toolbar" />
+
+
+    <com.hyzs.onekeyhelp.widget.view.VRefresh
+        android:id="@+id/forum_vr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/activity_mine_forum_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </com.hyzs.onekeyhelp.widget.view.VRefresh>
+
+</LinearLayout>

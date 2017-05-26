@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="F:\Studio\hyProject\hybbproject\myHybb\album\src\main\assets"/><source path="F:\Studio\hyProject\hybbproject\myHybb\album\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="F:\Studio\hyProject\hybbproject\myHybb\album\src\debug\assets"/></dataSet></merger>

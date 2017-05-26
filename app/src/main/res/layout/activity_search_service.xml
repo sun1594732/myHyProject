@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_search_service"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f4"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x10">
+
+        <EditText
+            android:id="@+id/activity_search_service_search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x64"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:background="@drawable/shape_cf"
+            android:hint="搜索一下，你就知道"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingLeft="@dimen/x10"
+            android:singleLine="true"
+            android:textColor="@color/color_3"
+            android:textColorHint="@color/color_9"
+            android:textSize="@dimen/y30" />
+
+        <ImageView
+            android:id="@+id/activity_search_service_search_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/x40"
+            android:src="@mipmap/fangdada" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/x10"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/activity_search_service_list_left"
+            android:layout_width="@dimen/x190"
+            android:layout_height="match_parent"
+            android:divider="@color/color_d"
+            android:dividerHeight="@dimen/x1"
+            android:scrollbars="none">
+
+        </ListView>
+
+        <ListView
+            android:id="@+id/activity_search_service_list_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_f"
+            android:divider="@color/color_d"
+            android:dividerHeight="@dimen/x1"
+            android:paddingLeft="@dimen/x60"
+            android:scrollbars="none">
+
+        </ListView>
+    </LinearLayout>
+</LinearLayout>

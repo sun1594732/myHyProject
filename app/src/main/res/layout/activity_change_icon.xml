@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/activity_change_icon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/person_message_image_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x168"
+        android:background="@color/color_f"
+        android:paddingLeft="@dimen/x40"
+        android:paddingRight="@dimen/x40" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="头像"
+            android:textColor="@color/color_0"
+            android:textSize="@dimen/y30"/>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/person_message_image"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/x100"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x22"
+            android:src="@mipmap/icon_replace"
+            app:civ_border_color="@color/color_6"
+            app:civ_border_width="0.5dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/color_d" />
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/x100"-->
+        <!--android:layout_marginTop="@dimen/x10"-->
+        <!--android:background="@color/color_f"-->
+        <!--android:paddingLeft="@dimen/x40"-->
+        <!--android:paddingRight="@dimen/x40" >-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:gravity="left"-->
+            <!--android:text="姓名"-->
+            <!--android:textSize="@dimen/y30"-->
+            <!--android:textColor="@color/color_0" />-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/person_message_name_tv"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:hint="请输入要修改的昵称"-->
+            <!--android:textColorHint="@color/color_9"-->
+            <!--android:paddingLeft="@dimen/x60"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@null"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:inputType="textPersonName"-->
+            <!--android:maxLength="16"-->
+            <!--android:textColor="@color/color_3"-->
+            <!--android:textSize="@dimen/y30" />-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:background="@mipmap/youjiantou"-->
+            <!--android:scaleType="centerCrop" />-->
+    <!--</LinearLayout>-->
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/x1"-->
+        <!--android:background="@color/color_f4" />-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/person_message_sex_ll"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/x100"-->
+        <!--android:background="@color/color_f"-->
+        <!--android:descendantFocusability="blocksDescendants"-->
+        <!--android:paddingLeft="@dimen/x40"-->
+        <!--android:paddingRight="@dimen/x40" >-->
+
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="left"-->
+            <!--android:text="性别"-->
+            <!--android:textColor="@color/color_0"-->
+            <!--android:textSize="@dimen/y30"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/person_message_sex_tv"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center_vertical|right"-->
+            <!--android:inputType="textPersonName"-->
+            <!--android:maxLength="16"-->
+            <!--android:textColor="@color/color_6"-->
+            <!--android:textSize="@dimen/y26" />-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_marginLeft="@dimen/x20"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:background="@mipmap/youjiantou"-->
+            <!--android:scaleType="centerCrop" />-->
+    <!--</LinearLayout>-->
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/x1"-->
+        <!--android:background="@color/color_f4" />-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/x100"-->
+        <!--android:background="@color/color_f"-->
+        <!--android:paddingLeft="@dimen/x40"-->
+        <!--android:paddingRight="@dimen/x40" >-->
+
+        <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="left"-->
+            <!--android:text="年龄"-->
+            <!--android:textColor="@color/color_0"-->
+            <!--android:textSize="@dimen/y30"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/person_message_age_tv"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center_vertical|right"-->
+            <!--android:inputType="textPersonName"-->
+            <!--android:maxLength="16"-->
+            <!--android:textColor="@color/color_6"-->
+            <!--android:textSize="@dimen/y26" />-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_marginLeft="@dimen/x20"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:background="@mipmap/youjiantou"-->
+            <!--android:scaleType="centerCrop" />-->
+    <!--</LinearLayout>-->
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/x1"-->
+        <!--android:background="@color/color_f4" />-->
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/person_message_card_ll"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/x100"-->
+        <!--android:layout_marginTop="@dimen/x20"-->
+        <!--android:background="@color/color_f"-->
+        <!--android:descendantFocusability="blocksDescendants"-->
+        <!--android:paddingLeft="@dimen/x40"-->
+        <!--android:paddingRight="@dimen/x40" >-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/shenfenrenzheng"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="left"-->
+            <!--android:text="身份证认证"-->
+            <!--android:textSize="@dimen/y30"-->
+            <!--android:textColor="@color/color_0" />-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_marginLeft="@dimen/x20"-->
+            <!--android:adjustViewBounds="true"-->
+            <!--android:background="@mipmap/youjiantou"-->
+            <!--android:scaleType="centerCrop" />-->
+    <!--</LinearLayout>-->
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/x1"-->
+        <!--android:background="@color/color_f4" />-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/person_message_submit"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginBottom="@dimen/x20"
+        android:layout_height="@dimen/x60"
+        android:textSize="@dimen/y32"
+        android:text="提交"
+        android:textColor="@color/color_f"
+        android:background="@drawable/shape_1ccd9b_4_soild"/>
+</LinearLayout>

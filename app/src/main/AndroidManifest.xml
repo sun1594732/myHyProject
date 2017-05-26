@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hyzs.onekeyhelp">
+
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- shareSDK权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 读取联系人权限 -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 摄影机 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- 读取联系人权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 拨打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+            android:name=".splash.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".contact.around.activity.AroundActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".IntentChatActivity" />
+        <activity android:name=".contact.activity.ContactSearchActivity" />
+        <activity android:name=".contact.activity.ContactTelImportActivity" />
+        <!-- baidu service -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="F5BBGryw9Ik1WR0cFy9LZdBv4leQTNFw" />
+
+        <!-- 友盟统计  key & 渠道id -->
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58dcbf365312dd1ef0000f56" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="bangbangtang" />
+
+        <activity android:name=".mine.activity.MineAlbumActivity" />
+        <activity android:name=".lifehelp.view.activity.LifeHelpPublishActivity" />
+        <activity
+            android:name=".lifehelp.view.activity.LifeHelpHomeActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".contact.activity.RegisterActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".contact.activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".contact.activity.ForgetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yanzhenjie.album.AlbumActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="图库"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|stateHidden" />
+
+        <!-- 设置环信应用的AppKey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="1127170307178481#yijianbangzu" />
+        <!-- 声明SDK所需的service SDK核心功能 -->
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true" />
+        <service
+            android:name="com.hyphenate.chat.EMJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <!-- 声明SDK所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".family.circle.activity.CircleActivity" />
+        <activity android:name=".family.circle.activity.CircleDetailActivity" />
+        <activity android:name=".family.circle.activity.CirclePublishActivity" />
+        <activity android:name=".family.movable.activity.EventRegistActivity" />
+        <activity android:name=".family.movable.activity.MovableListActivity" />
+        <activity android:name=".lifehelp.view.activity.HelpOtherDetailsActivity" />
+        <activity android:name=".news.NewsActivity" />
+        <activity android:name=".news.NewsWebActivity" />
+        <activity android:name=".family.movable.activity.MovableReleaseActivity" />
+        <activity android:name=".home.forum.activity.ForumActivity" />
+        <activity android:name=".home.forum.activity.ForumDetailActivity" />
+        <activity android:name=".home.forum.activity.ForumPublishActivity" />
+        <activity
+            android:name=".carresuce.view.CarResuceActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".carresuce.view.MyResuceDetailsActivity" />
+        <activity android:name=".carresuce.view.MyHelpDetailsActivity" />
+        <activity android:name=".carresuce.view.EmergencyRescueActivity" />
+        <activity android:name=".ShowImageActivity" />
+        <activity android:name=".mine.activity.MineHomeActivity" />
+        <activity android:name=".home.help.activity.VehicleRescueActivity" />
+        <activity android:name=".lifehelp.view.HelpMeDetailsActivity" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+            <!-- QQ和QQ空间分享 QQ登录的回调必须要配置的 -->
+            <intent-filter>
+                <data android:scheme="tencent1105756964" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 微信支付回调 -->
+        <activity android:name=".mine.forum.MineForumActivity" />
+        <activity android:name=".mine.active.MineActiveActivity" />
+        <activity android:name=".mine.circle.MineCircleActivity" />
+        <activity android:name=".mine.activity.MineHelpActivity" />
+        <activity android:name=".mine.CarManager.activity.CarManagerActivity" />
+        <activity android:name=".mine.activity.MineFamilyActivity" />
+        <activity android:name=".news.BaseNewsActivity" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+        <activity android:name=".mine.activity.MinePurseActivity" />
+        <activity android:name=".mine.activity.MineChargeActivity" />
+        <activity android:name=".mine.activity.MineAlipyH5Activity" />
+        <activity android:name=".mine.activity.MineAlbumSendActivity" />
+        <activity android:name=".carresuce.view.MyTroopsDetailsActivity" />
+        <activity android:name=".home.activity.CommunityNoticeBaseActivity" />
+        <activity android:name=".help.activity.HelpDetailActivity" />
+        <activity android:name=".help.activity.BegDetailActivity" />
+        <activity android:name=".help.activity.HelpActivity" />
+        <activity
+            android:name=".help.activity.HelpListActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".mine.activity.ChangeIconActivity" />
+        <activity android:name=".family.movable.activity.MovableRelease" />
+        <activity
+            android:name=".mine.activity.ChangePWDActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".mine.attention.MineAttentionActivity" />
+        <activity android:name="com.hyphenate.easeui.ui.EaseShowBigImageActivity" />
+
+        <service
+            android:name=".InfoService"
+            android:enabled="true" />
+
+        <!-- User defined. 用户自定义的广播接收器 -->
+        <receiver
+            android:name=".MyJPushReceiver"
+            android:enabled="true">
+            <intent-filter>
+
+                <!-- Required 用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required 用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required 用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required 用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+
+                <category android:name="com.hyzs.onekeyhelp" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".contact.activity.BatchAddActivity" />
+        <activity android:name=".family.activity.FamilyListActivity" />
+        <activity android:name=".mine.community.activity.CommunityListActivity" />
+        <activity android:name=".mine.community.activity.AddCommunityActivity" />
+        <activity android:name=".mine.opinion.activity.OpinionActivity" />
+        <activity android:name=".mine.customerservice.activity.CustomerServiceActivity" />
+        <activity android:name=".mine.activity.MineBillActivity" />
+        <activity android:name=".mine.activity.MineEditActivity" />
+        <activity android:name=".mine.activity.MineAuthenticationActivity" />
+        <activity android:name=".carresuce.view.HelpPeopleSum" />
+        <activity android:name=".IntentGroupChatActivity" />
+        <activity android:name=".module.record.activity.HomeRecordActivity" />
+        <activity android:name=".home.activity.HomeServiceH5Activity" />
+        <activity android:name=".home.activity.HomeHospitalActivity" />
+        <activity android:name=".family.activity.CreateGroupActivity" />
+        <activity android:name=".family.activity.FamilyAlbumPublishActivity" />
+        <activity android:name=".module.housekeeping.activity.HousekeepingActivity" />
+        <activity android:name=".module.housekeeping.activity.MineServiceDetailActivity" />
+        <activity android:name=".module.housekeeping.activity.AgencyServiceDetailActivity" />
+        <activity android:name=".module.housekeeping.search.activity.SearchServiceActivity" />
+        <activity android:name=".module.housekeeping.activity.PersonAddActivity" />
+        <activity android:name=".module.housekeeping.activity.ManagerActivity" />
+        <activity android:name=".module.housekeeping.activity.CompanyAddActivity" />
+        <activity android:name=".module.housekeeping.activity.MapViewActivity" />
+        <activity android:name=".module.housekeeping.activity.ServiceCommentListActivity" />
+        <activity android:name=".module.housekeeping.activity.ServiceProjectListActivity" />
+        <activity android:name=".module.housekeeping.activity.ServiceProjectAddActivity" />
+        <activity android:name=".module.housekeeping.activity.ServiceProjectDetailActivity" />
+        <activity android:name=".module.housekeeping.activity.OrderApplyH5Activity" />
+        <activity android:name=".module.housekeeping.activity.ServiceComplaintsActivity" />
+        <activity android:name=".module.housekeeping.reservation.activity.EvaluateOrderActivity" />
+        <activity android:name=".module.housekeeping.activity.OrderH5Activity" />
+        <activity android:name=".video.VideoChooseActivity" />
+        <activity android:name=".home.activity.CircleSelectActivity" />
+        <activity android:name=".mine.activity.MineUrgentActivity" />
+        <activity android:name=".family.albumimport.FamilyImportMineAlbumActivity" />
+        <activity android:name=".mine.company.MineCompanyActivity" />
+        <activity android:name=".family.circle.activity.CircleMovieDetailActivity" />
+        <activity android:name=".mine.activity.MineSignActivity"></activity>
+    </application>
+
+</manifest>

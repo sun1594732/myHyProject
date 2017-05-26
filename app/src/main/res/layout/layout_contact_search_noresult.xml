@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="@dimen/x118"
+    android:background="@color/color_f4">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x20"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x98"
+        android:orientation="horizontal"
+        android:background="@color/color_f">
+   <TextView
+       android:layout_width="@dimen/x60"
+       android:layout_height="match_parent"
+       android:background="@color/color_f"
+       android:text="搜索结果"
+       android:textSize="@dimen/y26"
+       android:textColor="@color/color_1ccd9b"
+       android:layout_marginLeft="@dimen/x30"
+       android:layout_marginRight="@dimen/x30"
+       android:gravity="center"/>
+    <View
+        android:layout_width="@dimen/x1"
+        android:layout_height="@dimen/x58"
+        android:background="@color/color_d8"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="抱歉，没搜到，换个方式试下"
+        android:textSize="@dimen/y30"
+        android:textColor="@color/color_6"
+        android:layout_marginLeft="@dimen/x28"
+        android:layout_marginRight="@dimen/x24"
+        android:gravity="center"/>
+    <View
+        android:layout_width="@dimen/x1"
+        android:layout_height="@dimen/x58"
+        android:background="@color/color_d8"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/contact_search_add_hand"
+        android:layout_width="@dimen/x134"
+        android:layout_height="match_parent"
+        android:text="手动添加"
+        android:background="@drawable/shape_1ccd9b_10_soild"
+        android:textSize="@dimen/y30"
+        android:textColor="@color/color_f"
+        android:layout_marginLeft="@dimen/x16"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginTop="@dimen/x24"
+        android:layout_marginBottom="@dimen/x24"
+        android:gravity="center"/>
+</LinearLayout>
+</LinearLayout>

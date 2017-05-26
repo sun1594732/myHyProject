@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_add_hand"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/layout_dialog_album"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:padding="@dimen/x20"
+            android:id="@+id/layout_dialog_life_help_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/x10"
+            android:background="@drawable/dialog_life_help_group"
+            android:gravity="center"
+            android:button="@null"
+            android:text="所有人"
+            android:checked="true"
+            android:textColor="@color/color_6" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:background="@color/color_d8" />
+        <RadioButton
+            android:padding="@dimen/x20"
+            android:id="@+id/layout_dialog_life_help_family"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/x10"
+            android:background="@drawable/dialog_life_help_group"
+            android:gravity="center"
+            android:button="@null"
+            android:text="家人"
+            android:checked="true"
+            android:textColor="@color/color_6" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:background="@color/color_d8" />
+
+        <RadioButton
+            android:padding="@dimen/x20"
+            android:id="@+id/layout_dialog_life_help_friend"
+            android:button="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/x10"
+            android:background="@drawable/dialog_life_help_group"
+            android:gravity="center"
+            android:text="朋友"
+            android:textColor="@color/color_6" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:background="@color/color_d8" />
+
+        <RadioButton
+            android:padding="@dimen/x20"
+            android:id="@+id/layout_dialog_life_help_neighbor"
+            android:button="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/x10"
+            android:background="@drawable/dialog_life_help_group"
+            android:gravity="center"
+            android:text="邻居"
+            android:textColor="@color/color_6" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/color_d8" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/x10"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:padding="@dimen/x20"
+            android:id="@+id/layout_dialog_life_help_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/color_6" />
+
+        <View
+            android:layout_width="@dimen/x1"
+            android:layout_height="match_parent"
+            android:background="@color/color_d8" />
+
+        <TextView
+            android:padding="@dimen/x20"
+            android:id="@+id/layout_dialog_life_help_sure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/color_6" />
+    </LinearLayout>
+</LinearLayout>

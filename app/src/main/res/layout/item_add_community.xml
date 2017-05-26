@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:background="@color/color_f"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/item_add_community_checkbox"
+        android:layout_width="wrap_content"
+        android:src="@mipmap/add_community_unchecked"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/x30"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/x50"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/item_add_community_name"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/y34"
+            android:textColor="@color/color_3"
+            android:text="康惠园小区"
+            android:layout_marginTop="@dimen/x30"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/x10"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/item_add_community_address"
+                android:text="位子：朝阳区双桥南路"
+                android:textSize="@dimen/y30"
+                android:textColor="@color/color_9"
+                android:layout_marginBottom="@dimen/x30"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/item_add_community_distance"
+                android:text="500m"
+                android:textColor="@color/color_9"
+                android:drawableLeft="@mipmap/add_community_location"
+                android:drawablePadding="@dimen/x20"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

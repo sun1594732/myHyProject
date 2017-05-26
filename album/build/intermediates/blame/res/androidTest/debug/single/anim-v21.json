@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "F:\\Studio\\myHybb\\album\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim-v21\\design_appbar_state_list_animator.xml",
+        "source": "F:\\Studio\\myHybb\\album\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\anim-v21\\design_appbar_state_list_animator.xml"
+    },
+    {
+        "merged": "F:\\Studio\\myHybb\\album\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
+        "source": "F:\\Studio\\myHybb\\album\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "F:\\Studio\\hyProject\\hybbproject\\myHybb\\album\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
+        "source": "F:\\Studio\\hyProject\\hybbproject\\myHybb\\album\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "F:\\Studio\\hyProject\\hybbproject\\myHybb\\album\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim-v21\\design_appbar_state_list_animator.xml",
+        "source": "F:\\Studio\\hyProject\\hybbproject\\myHybb\\album\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\anim-v21\\design_appbar_state_list_animator.xml"
+    },
+    {
+        "merged": "F:\\Studio\\myHybb\\album\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
+        "source": "F:\\Studio\\myHybb\\album\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "F:\\Studio\\hyProject\\hybbproject\\myHybb\\album\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
+        "source": "F:\\Studio\\hyProject\\hybbproject\\myHybb\\album\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.2.1\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
+    }
+]

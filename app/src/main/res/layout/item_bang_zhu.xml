@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x180">
+
+        <com.hyzs.onekeyhelp.widget.RoundImageView
+            android:id="@+id/item_bang_zhu_icon"
+            android:layout_width="@dimen/x120"
+            android:layout_height="@dimen/x120"
+            android:layout_marginBottom="@dimen/x30"
+            android:layout_marginLeft="@dimen/x30"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="@dimen/x30"
+            android:src="@mipmap/replace_hybb" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_bang_zhu_read"
+            android:layout_width="@dimen/x20"
+            android:layout_height="@dimen/x20"
+            android:src="@color/color_f81302"
+            android:layout_marginTop="@dimen/x25"
+            android:layout_marginLeft="@dimen/x25"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x30"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_bang_zhu_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张女士"
+                android:textColor="@color/color_3"
+                android:textSize="@dimen/y30" />
+
+            <ImageView
+                android:id="@+id/item_bang_zhu_identity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:src="@mipmap/identity" />
+
+            <TextView
+                android:id="@+id/item_bang_zhu_zheng"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:layout_marginLeft="@dimen/x10"
+                android:background="@drawable/shape_f81302_zheng"
+                android:paddingBottom="@dimen/x2"
+                android:paddingLeft="@dimen/x6"
+                android:paddingRight="@dimen/x6"
+                android:paddingTop="@dimen/x2"
+                android:text="证"
+                android:textColor="@color/color_f"
+                android:textSize="@dimen/y20"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/item_contact_search_shang"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:paddingBottom="@dimen/x2"
+                android:paddingLeft="@dimen/x6"
+                android:paddingRight="@dimen/x6"
+                android:paddingTop="@dimen/x2"
+                android:layout_marginLeft="@dimen/x4"
+                android:background="@drawable/shape_dd4337_8"
+                android:text="商"
+                android:textColor="@color/color_f"
+                android:textSize="@dimen/y20"
+                android:visibility="gone" />
+            <TextView
+                android:id="@+id/item_contact_search_fu"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x30"
+                android:paddingBottom="@dimen/x2"
+                android:paddingLeft="@dimen/x6"
+                android:paddingRight="@dimen/x6"
+                android:paddingTop="@dimen/x2"
+                android:layout_marginLeft="@dimen/x4"
+                android:background="@drawable/shape_15b521_2"
+                android:text="服"
+                android:textColor="@color/color_f"
+                android:textSize="@dimen/y20"
+                android:visibility="gone" />
+            <TextView
+                android:id="@+id/item_contact_search_wu"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:paddingBottom="@dimen/x2"
+                android:paddingLeft="@dimen/x6"
+                android:paddingRight="@dimen/x6"
+                android:paddingTop="@dimen/x2"
+                android:layout_marginLeft="@dimen/x4"
+                android:background="@drawable/shape_d8711e_3"
+                android:text="物"
+                android:textColor="@color/color_f"
+                android:textSize="@dimen/y20"
+                android:visibility="gone" />
+            <TextView
+                android:id="@+id/item_contact_search_jiu"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:paddingBottom="@dimen/x2"
+                android:paddingLeft="@dimen/x6"
+                android:paddingRight="@dimen/x6"
+                android:paddingTop="@dimen/x2"
+                android:layout_marginLeft="@dimen/x4"
+                android:background="@drawable/shape_0_f4_solid"
+                android:text="救"
+                android:textColor="@color/color_f"
+                android:textSize="@dimen/y20"
+                android:visibility="gone" />
+            <TextView
+                android:id="@+id/item_contact_search_ke"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:paddingBottom="@dimen/x2"
+                android:paddingLeft="@dimen/x6"
+                android:paddingRight="@dimen/x6"
+                android:paddingTop="@dimen/x2"
+                android:layout_marginLeft="@dimen/x4"
+                android:background="@drawable/shape_15b521_2"
+                android:text="客"
+                android:textColor="@color/color_f"
+                android:textSize="@dimen/y26"
+                android:visibility="gone" />
+            <TextView
+                android:id="@+id/item_contact_search_jie"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:paddingBottom="@dimen/x2"
+                android:paddingLeft="@dimen/x6"
+                android:paddingRight="@dimen/x6"
+                android:paddingTop="@dimen/x2"
+                android:layout_marginLeft="@dimen/x4"
+                android:background="@drawable/shape_f751c6"
+                android:text="街"
+                android:textColor="@color/color_f"
+                android:textSize="@dimen/y26"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/item_contact_search_lin"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:paddingBottom="@dimen/x2"
+                android:paddingLeft="@dimen/x6"
+                android:paddingRight="@dimen/x6"
+                android:paddingTop="@dimen/x2"
+                android:layout_marginLeft="@dimen/x4"
+                android:background="@drawable/shape_1ccd9b_6_soild"
+                android:text="邻"
+                android:textColor="@color/color_f"
+                android:textSize="@dimen/y26"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/item_contact_search_jin"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:paddingBottom="@dimen/x2"
+                android:paddingLeft="@dimen/x6"
+                android:paddingRight="@dimen/x6"
+                android:paddingTop="@dimen/x2"
+                android:layout_marginLeft="@dimen/x4"
+                android:background="@drawable/shape_f9404a"
+                android:text="紧"
+                android:textColor="@color/color_f"
+                android:textSize="@dimen/y26"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/item_contact_search_wei"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:paddingBottom="@dimen/x2"
+                android:paddingLeft="@dimen/x6"
+                android:paddingRight="@dimen/x6"
+                android:paddingTop="@dimen/x2"
+                android:layout_marginLeft="@dimen/x4"
+                android:background="@drawable/shape_408ff9"
+                android:text="委"
+                android:textColor="@color/color_f"
+                android:textSize="@dimen/y26"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/item_contact_search_jia"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:paddingBottom="@dimen/x2"
+                android:paddingLeft="@dimen/x6"
+                android:paddingRight="@dimen/x6"
+                android:paddingTop="@dimen/x2"
+                android:layout_marginLeft="@dimen/x4"
+                android:background="@drawable/shape_f96840"
+                android:text="家"
+                android:textColor="@color/color_f"
+                android:textSize="@dimen/y26"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x20"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/jingshi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:text="您收到一个紧急救援信息~！"
+                android:textColor="@color/color_3"
+                android:textSize="@dimen/y26" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x20"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/shijian" />
+
+            <TextView
+                android:id="@+id/item_bang_zhu_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:text="2017-3-7 11:25"
+                android:textColor="@color/color_3"
+                android:textSize="@dimen/y26" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/x1"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/x32"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_bang_zhu_status"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_weight="1"
+            android:text="等待救援"
+            android:textColor="@color/color_f7221b"
+            android:textSize="@dimen/y26" />
+
+        <ImageView
+            android:layout_gravity="right"
+            android:id="@+id/item_bang_zhu_detail"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x30"
+            android:src="@mipmap/xiangqing" />
+    </LinearLayout>
+</LinearLayout>

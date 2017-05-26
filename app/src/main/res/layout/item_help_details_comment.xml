@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    >
+
+    <!--他人发的信息-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/item_help_other_details_ll_other"
+        >
+
+        <com.hyzs.onekeyhelp.widget.RoundImageView
+            android:scaleType="centerCrop"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/x100"
+            android:layout_marginTop="@dimen/x20"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginBottom="@dimen/x20"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/item_help_other_details_iv_face"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_marginTop="@dimen/x24"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/live_help_other_details_tv_name"
+                android:layout_marginLeft="@dimen/x28"
+                android:text="白富美"
+                android:textColor="#666666"
+                android:textSize="@dimen/x30"
+                />
+            <TextView
+                android:layout_marginTop="@dimen/x24"
+                android:layout_width="@dimen/x200"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/live_help_other_details_tv_time"
+                android:layout_marginLeft="@dimen/x10"
+                android:text="12-24 23:59"
+                android:textColor="#666666"
+                android:textSize="@dimen/x26"
+                />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/x14"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x30"
+                    android:id="@+id/live_help_other_details_tv_info"
+                    android:layout_marginLeft="@dimen/x28"
+                    android:text="这里输入聊天内容内容内容我玩呢啊这里输入聊天内容内容内容我玩呢啊"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/x30"
+                    android:layout_marginBottom="@dimen/y10"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#f4f4f4"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        />
+    <!--我发的消息-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/item_help_other_details_ll_me"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="@dimen/x590"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:layout_marginTop="@dimen/x24"
+                    android:textStyle="bold"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:id="@+id/live_help_other_details_tv_name_me"
+                    android:text="白富美"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/x30"
+                    />
+
+                <TextView
+                    android:layout_marginTop="@dimen/x24"
+                    android:layout_width="@dimen/x200"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/live_help_other_details_tv_time_me"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:text="12-24 23:59"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/x26"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/x14"
+                >
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x30"
+                    android:id="@+id/live_help_other_details_tv_info_me"
+                    android:layout_marginLeft="@dimen/x28"
+                    android:text="这里输入聊天内容内容内容我玩呢啊这里输入聊天内容内容内容我玩呢啊"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/x30"
+                    android:layout_marginBottom="@dimen/y10"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <com.hyzs.onekeyhelp.widget.RoundImageView
+            android:scaleType="centerCrop"
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/x100"
+            android:layout_marginTop="@dimen/x25"
+            android:layout_marginBottom="@dimen/x20"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/item_help_other_details_iv_face_me"
+            />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#f4f4f4"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        />
+
+</LinearLayout>

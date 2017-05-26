@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_f">
+
+
+    <include layout="@layout/toolbar" />
+
+   <com.hyzs.onekeyhelp.widget.SyncHorizontalScrollView
+       android:id="@+id/activity_life_help_home_nav"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/x68">
+       <RelativeLayout
+           android:id="@+id/activity_life_help_home_nav_rl"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_gravity="top"
+           android:background="@color/color_d8" >
+
+           <RadioGroup
+               android:id="@+id/activity_life_help_home_nav_rg"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/x66"
+               android:layout_alignParentTop="true"
+               android:background="@color/color_9f9e9e"
+               android:orientation="horizontal" >
+           </RadioGroup>
+
+           <ImageView
+               android:id="@+id/activity_life_help_home_nav_indicator"
+               android:layout_width="@dimen/x1"
+               android:layout_height="@dimen/x2"
+               android:layout_alignParentBottom="true"
+               android:background="@color/color_1ccd9b"
+               android:scaleType="matrix" />
+       </RelativeLayout>
+   </com.hyzs.onekeyhelp.widget.SyncHorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/color_e3" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_life_help_home_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f4"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x90"
+        android:background="@color/color_f">
+
+        <ImageView
+            android:id="@+id/purse_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/x24"
+            android:src="@drawable/back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的钱包"
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/y30"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x130">
+
+        <ImageView
+            android:id="@+id/purse_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x40"
+            android:src="@drawable/my_purse"/>
+
+        <TextView
+            android:id="@+id/tv_user_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="0.00"
+            android:textColor="@color/color_3"
+            android:layout_marginRight="@dimen/x40"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x12"
+            android:layout_toEndOf="@+id/purse_img"
+            android:layout_toRightOf="@+id/purse_img"
+            android:text="余额"
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/y30"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/ll_purse_rec"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x84"
+        android:background="@drawable/setting_item"
+        android:drawablePadding="10dp"
+        android:drawableRight="@mipmap/youjiantou"
+        android:gravity="center_vertical"
+        android:onClick="OnClick"
+        android:paddingLeft="@dimen/x40"
+        android:paddingRight="@dimen/x40"
+        android:text="充值"
+        android:textColor="@color/color_3"
+        android:textSize="@dimen/y30"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x10"/>
+
+    <TextView
+        android:id="@+id/ll_purse_bill"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x84"
+        android:background="@drawable/setting_item"
+        android:drawablePadding="@dimen/x18"
+        android:drawableRight="@mipmap/youjiantou"
+        android:gravity="center_vertical"
+        android:onClick="OnClick"
+        android:paddingLeft="@dimen/x40"
+        android:paddingRight="@dimen/x40"
+        android:text="账单"
+        android:textColor="@color/color_3"
+        android:textSize="@dimen/y30"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:paddingLeft="@dimen/x30"
+        android:text="温馨提示："
+        android:textColor="#FF0000"
+        android:textSize="@dimen/y26"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x40"
+        android:text="    如果您的余额为0时,将无法发送短信给您的紧急联系人/附近的人,为了您的安全建议您少量充值"
+        android:textColor="#FF0000"
+        android:textSize="@dimen/y26"/>
+
+</LinearLayout>

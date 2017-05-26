@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_mine_album"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/mineg_album_tool"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/activity_mine_album_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x250"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/mine_bg"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <com.hyzs.onekeyhelp.widget.RoundImageView
+            android:layout_width="@dimen/x140"
+            android:layout_height="@dimen/x140"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/x180"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/replace_hybb"
+            android:background="@drawable/border_4_4_10"
+            android:padding="@dimen/x4"
+            android:id="@+id/activity_mine_album_icon" />
+
+        <TextView
+            android:text="自定义名称"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/activity_mine_album_icon"
+            android:layout_toRightOf="@+id/activity_mine_album_icon"
+            android:layout_toEndOf="@+id/activity_mine_album_icon"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="@dimen/x8"
+            android:textSize="@dimen/y34"
+            android:textColor="@color/color_f"
+            android:layout_marginStart="@dimen/x20"
+            android:id="@+id/activity_mine_album_name" />
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/y26"
+            android:textColor="@color/color_3"
+            android:layout_marginTop="@dimen/x14"
+            android:layout_below="@+id/activity_mine_album_bg"
+            android:layout_alignLeft="@+id/activity_mine_album_name"
+            android:layout_alignStart="@+id/activity_mine_album_name"
+            android:id="@+id/activity_mine_album_sign"/>
+
+    </RelativeLayout>
+
+    <com.hyzs.onekeyhelp.widget.view.VRefresh
+        android:id="@+id/activity_mine_album_vRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/activity_mine_album_lv"/>
+    </com.hyzs.onekeyhelp.widget.view.VRefresh>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/color_f4"
+        android:layout_marginTop="@dimen/x40"/>
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/x60"
+        android:layout_marginTop="@dimen/x47"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/x156"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x30"
+            android:gravity="right"
+            android:text="家庭名称："
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/y26" />
+
+        <EditText
+            android:id="@+id/activity_create_group_name"
+            style="@style/MyEditText2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x68"
+            android:background="@color/color_f8f7f7"
+            android:hint="请输入家庭名称"
+            android:paddingLeft="@dimen/x20"
+            android:singleLine="true"
+            android:textColor="@color/color_3"
+            android:textColorHint="@color/color_9"
+            android:textSize="@dimen/y26" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/x60"
+        android:layout_marginTop="@dimen/x47"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/x156"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/x20"
+            android:gravity="right"
+            android:text="家庭描述："
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/y26" />
+
+        <EditText
+            android:id="@+id/activity_create_group_desc"
+            style="@style/MyEditText2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x230"
+            android:background="@color/color_f8f7f7"
+            android:gravity="top"
+            android:hint="请输入家庭描述请"
+            android:lineSpacingExtra="@dimen/x20"
+            android:maxLines="4"
+            android:paddingLeft="@dimen/x20"
+            android:paddingTop="@dimen/x20"
+            android:textColor="@color/color_3"
+            android:textColorHint="@color/color_9"
+            android:textSize="@dimen/y26" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/x47"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/x156"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x30"
+            android:gravity="right"
+            android:text="家庭头像："
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/y26" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/activity_opinion_recycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <ImageView
+            android:id="@+id/activity_opinion_add_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/tianjiazhaopian" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/activity_create_group_submit"
+        android:layout_width="@dimen/x376"
+        android:layout_height="@dimen/x80"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x110"
+        android:background="@drawable/shape_1ccd9b_4_soild"
+        android:text="创建家庭" />
+</LinearLayout>

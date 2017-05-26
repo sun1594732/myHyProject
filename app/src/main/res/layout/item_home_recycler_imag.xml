@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/iv_icon"
+    android:layout_width="@dimen/x100"
+    android:layout_height="@dimen/x100"
+    android:orientation="vertical"
+    android:scaleType="centerCrop"
+    android:padding="@dimen/x1"
+    android:src="@mipmap/icon_replace"
+    android:background="@drawable/border_23_d2c"
+    android:layout_margin="@dimen/x8"/>

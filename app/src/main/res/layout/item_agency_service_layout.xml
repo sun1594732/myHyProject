@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_agency_service_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f"
+    android:orientation="horizontal">
+
+    <com.hyzs.onekeyhelp.widget.RoundImageView
+        android:id="@+id/item_agency_service_layout_icon"
+        android:layout_width="@dimen/x120"
+        android:layout_height="@dimen/x120"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="@dimen/x40"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_replace" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/x40"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_agency_service_layout_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="嘉家乐家政"
+                android:textColor="@color/color_3"
+                android:textSize="@dimen/y34" />
+
+            <TextView
+                android:id="@+id/item_agency_service_layout_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="距您10km"
+                android:textColor="@color/color_9"
+                android:textSize="@dimen/y26" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/item_agency_service_layout_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x15"
+                android:ellipsize="end"
+                android:lineSpacingMultiplier="1.2"
+                android:maxLines="2"
+                android:text="3万好保姆，来电8折优惠。月嫂、育儿嫂、老人护理、钟点工。"
+                android:textColor="@color/color_6"
+                android:textSize="@dimen/y28" />
+
+            <TextView
+                android:id="@+id/item_agency_service_layout_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:text="查看更多"
+                android:textColor="@color/color_1ccd9b"
+                android:textSize="@dimen/y28"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x24"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item_agency_service_layout_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/communication"
+                    android:drawablePadding="@dimen/x20"
+                    android:text="010-45669999"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y26" />
+
+                <TextView
+                    android:id="@+id/item_agency_service_layout_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x5"
+                    android:drawableLeft="@mipmap/location"
+                    android:drawablePadding="@dimen/x20"
+                    android:text="朝阳区朝阳路财满街69号一期1号楼1单元1002"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y26" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/x40">
+
+                <ImageView
+                    android:id="@+id/item_agency_service_layout_call_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/xiangqingye_tonghua" />
+
+                <ImageView
+                    android:id="@+id/item_agency_service_layout_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x12"
+                    android:src="@mipmap/xiangqingye_liaoitan" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

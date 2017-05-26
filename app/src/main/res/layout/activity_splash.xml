@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f">
+
+    <RelativeLayout
+        android:id="@+id/activity_main_start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/start" />
+
+        <TextView
+            android:id="@+id/activity_main_start_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/x400"
+            android:text="当前版本号: v3.1"
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/y26" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_main_start_version"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/x20"
+            android:drawableLeft="@mipmap/start_logo"
+            android:drawablePadding="@dimen/x10"
+            android:text="@string/company_name"
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/y22" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_splash_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/activity_splash_skip"
+        android:layout_width="@dimen/x80"
+        android:layout_height="@dimen/x80"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/x20"
+        android:background="@drawable/shape_c9_10_solid"
+        android:gravity="center"
+        android:padding="@dimen/x4"
+        android:text="跳过"
+        android:textColor="@color/color_f"
+        android:textSize="@dimen/y26" />
+</RelativeLayout>

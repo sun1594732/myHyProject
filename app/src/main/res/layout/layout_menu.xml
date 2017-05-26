@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/x300"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f"
+    android:orientation="vertical">
+    <View
+        android:layout_width="@dimen/x300"
+        android:layout_height="@dimen/x1"/>
+    <TextView
+        android:id="@+id/layout_menu_changePWD"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/x90"
+        android:gravity="center"
+        android:text="修改密码"
+        android:drawableLeft="@mipmap/grzx_xiugaimima"
+        android:drawablePadding="@dimen/x30"
+        android:textColor="@color/color_3"
+        android:textSize="@dimen/y30" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/color_d"/>
+    <TextView
+        android:id="@+id/layout_menu_singOff"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="@dimen/x90"
+        android:drawablePadding="@dimen/x30"
+        android:drawableLeft="@mipmap/grzx_tuichudengluj"
+        android:gravity="center"
+        android:text="退出登录"
+        android:textColor="@color/color_3"
+        android:textSize="@dimen/y30" />
+</LinearLayout>

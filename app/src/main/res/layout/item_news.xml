@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_f">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+    <com.hyzs.onekeyhelp.widget.RoundImageView
+        android:layout_marginTop="@dimen/x20"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_width="@dimen/x150"
+        android:layout_height="@dimen/x150" 
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="centerCrop"
+        android:id="@+id/news_headimage"
+        />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/x34"
+        android:layout_marginTop="@dimen/x28"
+        android:layout_marginRight="@dimen/x10"
+
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="false"
+            android:textColor="#333333"
+            android:textSize="@dimen/y30"
+            android:text="秦始皇陵墓发现一口宝剑，经考古学家鉴定，疑似公子扶苏自刎之剑"
+            android:lineSpacingExtra="@dimen/x10"
+            android:id="@+id/tv_news_intro"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/x28"
+            >
+            <TextView
+                android:layout_width="@dimen/x160"
+                android:layout_height="wrap_content"
+                android:textColor="#999999"
+                android:textSize="@dimen/y26"
+                android:text="中华晨报"
+                android:id="@+id/tv_news_where"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/x1"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_9"
+                android:gravity="center"
+                android:text="24小时前"
+                android:id="@+id/tv_news_time"
+                android:textSize="@dimen/y26"
+                />
+            <ImageView
+                android:layout_marginLeft="@dimen/x28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yanjing"
+                android:layout_marginTop="@dimen/x4"
+                />
+
+            <TextView
+                android:layout_marginLeft="@dimen/x8"
+                android:layout_width="@dimen/x50"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_9"
+                android:textSize="@dimen/y26"
+                android:text="100"
+                android:id="@+id/tv_news_browse_number"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#f4f4f4"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_marginBottom="@dimen/x10"
+        />
+    
+    
+
+
+
+</LinearLayout>

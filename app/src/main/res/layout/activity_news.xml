@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_news"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context="com.hyzs.onekeyhelp.community.NewsActivity">
+    <include layout="@layout/toolbar" />
+
+    <com.hyzs.onekeyhelp.widget.view.VRefresh
+        android:id="@+id/superRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/news_list_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white" />
+
+    </com.hyzs.onekeyhelp.widget.view.VRefresh>
+
+</LinearLayout>

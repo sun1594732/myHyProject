@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_mine_service_experience"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_mine_service_experience_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2015.07.15"
+                android:textColor="@color/color_3"
+                android:textSize="@dimen/y30" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x60"
+                android:text="至"
+                android:textColor="@color/color_3"
+                android:textSize="@dimen/y30" />
+
+            <TextView
+                android:id="@+id/item_mine_service_experience_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2015.07.15"
+                android:textColor="@color/color_3"
+                android:textSize="@dimen/y30" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_mine_service_experience_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="住家保姆"
+                android:textColor="@color/color_3"
+                android:textSize="@dimen/y30" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x60"
+                android:textColor="@color/color_3"
+                android:textSize="@dimen/y30" />
+
+            <TextView
+                android:id="@+id/item_mine_service_experience_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="朝阳区高井"
+                android:textColor="@color/color_9"
+                android:textSize="@dimen/y30" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_mine_service_experience_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/x15"
+                android:drawableTop="@mipmap/wei_yz"
+                android:text="未验证"
+                android:textColor="@color/color_3"
+                android:textSize="@dimen/y30" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x2"
+        android:layout_marginBottom="@dimen/x20"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/x20"
+        android:background="@color/color_d" />
+</LinearLayout>

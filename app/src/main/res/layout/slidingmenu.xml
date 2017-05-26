@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sliding="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f"
+    android:orientation="vertical">
+
+    <com.jeremyfeinstein.slidingmenu.lib.SlidingMenu
+        android:id="@+id/sm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        sliding:mode="right"
+        sliding:shadowDrawable="@color/color_f4"
+        sliding:shadowWidth="@dimen/x1"
+        sliding:touchModeAbove="fullscreen"
+        sliding:viewAbove="@layout/fragment_home_replace"
+        sliding:viewBehind="@layout/fragment_mine" />
+</LinearLayout>

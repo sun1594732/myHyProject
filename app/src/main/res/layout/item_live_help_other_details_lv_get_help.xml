@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+    <com.hyzs.onekeyhelp.widget.RoundImageView
+        android:scaleType="centerCrop"
+        android:layout_width="@dimen/x100"
+        android:layout_height="@dimen/x100"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="@dimen/x30"
+        android:layout_marginBottom="@dimen/x20"
+        android:src="@mipmap/add"
+        android:id="@+id/live_help_other_details_item_iv_face"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x166"
+        android:background="@android:color/white"
+
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/x28"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/live_help_other_details_item_tv_name"
+            android:text="白富美"
+            android:textColor="#444444"
+            android:textSize="@dimen/y30"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/x30"
+
+            />
+
+        <ImageView
+            android:id="@+id/live_help_other_details_item_iv_idcard"
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/x30"
+            android:background="@mipmap/identity"
+            android:layout_marginLeft="@dimen/x8"
+            android:layout_marginTop="@dimen/x30"
+            />
+
+        <TextView
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30"
+            android:background="@drawable/shape_15b521_2"
+            android:layout_marginTop="@dimen/x20"
+            android:id="@+id/live_help_other_details_item_tv_zheng"
+            android:text="证"
+            android:textColor="@color/color_f"
+            android:layout_marginLeft="@dimen/x10"
+            android:gravity="center"
+            android:textSize="@dimen/y20"
+            android:visibility="visible"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            >
+
+        <TextView
+
+            android:layout_width="@dimen/x120"
+            android:layout_height="@dimen/x30"
+            android:layout_marginTop="@dimen/x25"
+            android:text="已帮助"
+            android:textColor="#666666"
+
+            android:gravity="center"
+            android:textSize="@dimen/y26"
+            android:visibility="visible"
+            android:textStyle="bold"
+            android:id="@+id/live_help_other_details_item_tv_ishelp"
+
+            />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x80"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:layout_marginLeft="@dimen/x30"
+            >
+            <TextView
+                android:layout_width="@dimen/x230"
+                android:layout_height="@dimen/x60"
+                android:text="16:01 为您提供了帮助 "
+                android:textColor="#666666"
+                android:layout_marginTop="@dimen/x20"
+                android:maxLines="2"
+                android:textSize="@dimen/y26"
+                android:visibility="visible"
+                android:id="@+id/live_help_other_details_item_tv_time"
+
+                />
+            <TextView
+                android:layout_width="@dimen/x230"
+                android:layout_height="@dimen/x30"
+                android:text="悬赏金额：100元 "
+
+                android:textColor="#e2e2e2"
+                android:layout_marginTop="@dimen/x20"
+                android:gravity="right"
+                android:layout_marginLeft="@dimen/x70"
+                android:textSize="@dimen/y26"
+                android:id="@+id/live_help_other_details_item_tv_overmoney"
+                />
+
+            <LinearLayout
+                android:layout_width="@dimen/x250"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/x80"
+                android:id="@+id/live_help_other_details_item_ll_calculate_money"
+                android:layout_marginTop="@dimen/x10">
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/x40"
+                    android:layout_width="@dimen/x35"
+                    android:layout_height="@dimen/x40"
+                    android:background="@drawable/selector_life_details_item_text_background"
+                    android:id="@+id/live_help_other_details_item_iv_subtract" />
+
+                <EditText
+                    android:layout_width="@dimen/x86"
+                    android:layout_height="@dimen/y40"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:background="#d7d7d7"
+                    android:id="@+id/live_help_other_details_item_et_money"
+                    android:gravity="right"
+                    android:inputType="number"
+                    android:textColor="#666666"
+                    android:textColorHint="#666666"
+                     />
+
+                <ImageView
+                    android:id="@+id/live_help_other_details_item_iv_add"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_width="@dimen/x35"
+                    android:layout_height="@dimen/x40"
+                    android:background="@drawable/selector_life_details_item_text"
+                     />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e2e2e2"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x40"
+
+        />
+</LinearLayout>

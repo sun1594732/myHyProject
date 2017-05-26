@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x144">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/fragment_contact_list_icon"
+            android:layout_width="@dimen/x78"
+            android:layout_height="@dimen/x78"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_marginTop="@dimen/x26"
+            android:src="@mipmap/replace_hybb" />
+
+        <View
+            android:layout_width="@dimen/x1"
+            android:layout_height="@dimen/x78"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/fragment_contact_list_icon"
+            android:background="@color/color_d8" />
+
+        <TextView
+            android:id="@+id/fragment_contact_list_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginStart="@dimen/x30"
+            android:layout_marginTop="@dimen/x24"
+            android:layout_toEndOf="@+id/fragment_contact_list_icon"
+            android:layout_toRightOf="@+id/fragment_contact_list_icon"
+            android:text="请先登录"
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/x34" />
+
+
+        
+
+        <TextView
+            android:id="@+id/fragment_contact_list_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/fragment_contact_list_name"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/fragment_contact_list_name"
+            android:layout_marginBottom="@dimen/x31"
+            android:text="已绑定电话： "
+            android:textColor="@color/color_52"
+            android:textSize="@dimen/x26" />
+
+        <LinearLayout
+            android:id="@+id/fragment_contact_list_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x38"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x32"
+                    android:padding="@dimen/x8"
+                    android:src="@mipmap/add" />
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/fragment_contact_list_pop"
+                    android:layout_width="@dimen/x25"
+                    android:layout_height="@dimen/x25"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/x30"
+                    android:background="@drawable/shape_qipao"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textSize="@dimen/y18"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加"
+                android:textColor="@color/color_52"
+                android:textSize="@dimen/x26" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/x10"
+            android:background="@color/color_d8" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x70"
+        android:background="@color/color_1ccd9b"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/x100"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/fragment_contact_edit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x48"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:background="@drawable/search_back"
+                android:drawableLeft="@mipmap/search"
+                android:drawablePadding="@dimen/x14"
+                android:hint="输入 姓名/电话/开头字母/ 快速查找"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="@dimen/x14"
+                android:singleLine="true"
+                android:textColor="@color/color_6"
+                android:textColorHint="@color/color_52"
+                android:textSize="@dimen/y26" />
+
+            <ImageView
+                android:id="@+id/fragment_contact_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/fragment_contact_edit"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/x10"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.hyzs.onekeyhelp.widget.PinnedHeaderListView
+            android:id="@+id/pinnedListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/x40"
+            android:scrollbars="none" />
+
+        <com.hyzs.onekeyhelp.widget.MySideBar
+            android:id="@+id/sideBar"
+            android:layout_width="@dimen/x80"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="#00ffffff"
+            android:paddingRight="@dimen/x5"
+            app:sidebar_text_alignment="center" />
+    </FrameLayout>
+
+</LinearLayout>

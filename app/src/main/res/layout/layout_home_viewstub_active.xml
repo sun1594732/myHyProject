@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x12"
+        android:background="@color/color_f4"/>
+    <TextView
+        android:id="@+id/fragment_home_viewstub2_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x90"
+        android:text="社区活动"
+        android:textColor="@color/color_3"
+        android:textSize="@dimen/y34"
+        android:gravity="center"
+        android:drawableRight="@mipmap/youjiantou"
+        android:paddingRight="@dimen/x30"
+        android:paddingLeft="@dimen/x30"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/color_d2c"/>
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/fragment_home_viewstub2_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x94"
+        android:background="@color/color_f"
+        app:tl_divider_width="0dp"
+        app:tl_indicator_color="@color/color_1ccd9b"
+        app:tl_indicator_gravity="BOTTOM"
+        app:tl_indicator_height="@dimen/x4"
+        app:tl_indicator_style="NORMAL"
+        app:tl_tab_space_equal="true"
+        app:tl_textSelectColor="@color/color_3"
+        app:tl_textUnselectColor="@color/color_9"
+        app:tl_textsize="@dimen/y34"
+        app:tl_underline_height="0dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/color_d8" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x10"
+        android:background="@color/color_f" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fragment_home_viewstub2_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

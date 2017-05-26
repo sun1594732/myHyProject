@@ -1,0 +1,946 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_mine"
+    android:background="@color/color_f"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_empty"
+        layout="@layout/layout_empty"
+        android:visibility="gone"/>
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x360"
+                android:layout_marginBottom="@dimen/x10"
+                android:background="@mipmap/mine_bg"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/fragment_mine_icon"
+                    android:layout_width="@dimen/x158"
+                    android:layout_height="@dimen/x158"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/x14"
+                    android:layout_marginTop="@dimen/x30"
+                    android:src="@mipmap/icon_replace"
+                    app:civ_border_color="@color/color_f"
+                    app:civ_border_width="@dimen/x2" />
+
+                <TextView
+                    android:id="@+id/fragment_mine_changeIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/x18"
+                    android:drawableLeft="@mipmap/grzx_shezhitouxiang"
+                    android:drawablePadding="@dimen/x5"
+                    android:text="设置头像"
+                    android:textSize="@dimen/y26" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x120"
+                    android:background="#ccffffff">
+
+                    <TextView
+                        android:id="@+id/fragment_mine_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/x14"
+                        android:text="白富美"
+                        android:textColor="@color/color_3"
+                        android:textSize="@dimen/y34" />
+
+                    <TextView
+                        android:id="@+id/fragment_mine_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/fragment_mine_name"
+                        android:layout_toEndOf="@+id/fragment_mine_name"
+                        android:layout_toRightOf="@+id/fragment_mine_name"
+                        android:drawableLeft="@mipmap/huanguan"
+                        android:drawablePadding="@dimen/x10"
+                        android:paddingBottom="@dimen/x4"
+                        android:paddingLeft="@dimen/x10"
+                        android:text="Lv 99"
+                        android:textColor="@color/color_f7221b"
+                        android:textSize="@dimen/y30"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/fragment_mine_sign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fragment_mine_name"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/x6"
+                        android:text="个人签名：今天工作不"
+                        android:textColor="@color/color_3"
+                        android:textSize="@dimen/y26" />
+
+                    <ImageView
+                        android:id="@+id/fragment_mine_edit"
+                        android:layout_width="@dimen/x60"
+                        android:layout_height="@dimen/x60"
+                        android:layout_alignBottom="@+id/fragment_mine_sign"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/x30"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/shezhi" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_d" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x130"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img_yue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/fragment_mine_text1"
+                        android:src="@mipmap/grzx_dqye" />
+
+                    <TextView
+                        android:id="@+id/fragment_mine_text1"
+                        android:layout_width="@dimen/x136"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:layout_marginRight="@dimen/x10"
+                        android:layout_marginTop="@dimen/x24"
+                        android:text="当前余额"
+                        android:textColor="@color/color_3"
+                        android:textSize="@dimen/y34" />
+
+                    <TextView
+                        android:id="@+id/fragment_mine_balance"
+                        android:layout_width="@dimen/x136"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/fragment_mine_text1"
+                        android:layout_alignStart="@+id/fragment_mine_text1"
+                        android:layout_below="@+id/fragment_mine_text1"
+                        android:layout_marginTop="@dimen/x8"
+                        android:drawableLeft="@mipmap/rmb"
+                        android:drawablePadding="-10px"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/x10"
+                        android:text="999.00"
+                        android:textColor="@color/color_ef1111"
+                        android:textSize="@dimen/y26" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="@dimen/x1"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/x20"
+                    android:layout_marginTop="@dimen/x20"
+                    android:background="@color/color_d" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img_jf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/fragment_mine_text2"
+                        android:src="@mipmap/grzx_dqjf" />
+
+                    <TextView
+                        android:id="@+id/fragment_mine_point"
+                        android:layout_width="@dimen/x136"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/fragment_mine_text2"
+                        android:layout_alignStart="@+id/fragment_mine_text2"
+                        android:layout_below="@+id/fragment_mine_text2"
+                        android:layout_marginTop="@dimen/x8"
+                        android:gravity="center"
+                        android:text="9999"
+                        android:textColor="@color/color_ef1111"
+                        android:textSize="@dimen/y26" />
+
+                    <TextView
+                        android:id="@+id/fragment_mine_text2"
+                        android:layout_width="@dimen/x136"
+                        android:layout_height="wrap_content"
+                        android:text="当前积分"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/color_3"
+                        android:textSize="@dimen/y34"
+                        android:layout_marginTop="@dimen/x24"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="@dimen/x1"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/x20"
+                    android:layout_marginTop="@dimen/x20"
+                    android:background="@color/color_d" />
+
+                <TextView
+                    android:id="@+id/fragment_mine_signIn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/qiandao"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/x20"
+                    android:text="签到"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30"
+                    android:visibility="visible" />
+
+                <View
+                    android:layout_width="@dimen/x1"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/x20"
+                    android:layout_marginTop="@dimen/x20"
+                    android:background="@color/color_d" />
+
+                <TextView
+                    android:id="@+id/fragment_mine_invitation"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/youjiang"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/x20"
+                    android:text="邀请有奖"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="@dimen/x1"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/x20"
+                    android:layout_marginTop="@dimen/x20"
+                    android:background="@color/color_f4" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x10"
+                android:background="@color/color_d" />
+
+            <LinearLayout
+                android:id="@+id/fragment_mine_charge"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:layout_marginRight="@dimen/x40"
+                    android:src="@mipmap/chongzhi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的充值"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x30"
+                    android:src="@mipmap/youjiantou" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_d" />
+
+            <LinearLayout
+                android:id="@+id/fragment_mine_urgent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:layout_marginRight="@dimen/x40"
+                    android:src="@mipmap/wodejinjilianxiren" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 我的紧急联系人"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x30"
+                    android:src="@mipmap/youjiantou" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_d" />
+            <LinearLayout
+                android:id="@+id/fragment_mine_album"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:layout_marginRight="@dimen/x40"
+                    android:src="@mipmap/xiangce" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的相册"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x30"
+                    android:src="@mipmap/youjiantou" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_d" />
+
+            <LinearLayout
+                android:id="@+id/fragment_mine_active"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:layout_marginRight="@dimen/x40"
+                    android:src="@mipmap/huodong" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的活动"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x30"
+                    android:src="@mipmap/youjiantou" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_d"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/fragment_mine_alert"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:layout_marginRight="@dimen/x40"
+                    android:src="@mipmap/tixing" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="事件提醒"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x30"
+                    android:src="@mipmap/youjiantou" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_d" />
+
+            <LinearLayout
+                android:id="@+id/fragment_mine_attention"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:layout_marginRight="@dimen/x40"
+                    android:src="@mipmap/guanzhu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/x4"
+                    android:text="我的关注"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x30"
+                    android:src="@mipmap/youjiantou" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_d" />
+
+            <LinearLayout
+                android:id="@+id/fragment_mine_help"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:layout_marginRight="@dimen/x40"
+                    android:src="@mipmap/qiuzhu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的求助"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x30"
+                    android:src="@mipmap/youjiantou" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_d" />
+
+            <LinearLayout
+                android:id="@+id/fragment_mine_message"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:layout_marginRight="@dimen/x40"
+                    android:src="@mipmap/xiaoxi3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的消息"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30" />
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x30"
+                    android:src="@mipmap/youjiantou" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_d"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/fragment_mine_post"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:layout_marginRight="@dimen/x40"
+                    android:src="@mipmap/tiezi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的帖子"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x30"
+                    android:src="@mipmap/youjiantou" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_d" />
+
+            <LinearLayout
+                android:id="@+id/fragment_mine_circle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:layout_marginRight="@dimen/x40"
+                    android:src="@mipmap/quanzi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的圈子"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x30"
+                    android:src="@mipmap/youjiantou" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:visibility="gone"
+                android:background="@color/color_d" />
+
+            <LinearLayout
+                android:id="@+id/fragment_mine_member"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:layout_marginRight="@dimen/x40"
+                    android:src="@mipmap/chengyuan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="家庭成员"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x30"
+                    android:src="@mipmap/youjiantou" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_d" />
+
+            <LinearLayout
+                android:id="@+id/fragment_mine_car"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:layout_marginRight="@dimen/x40"
+                    android:src="@mipmap/cheliang" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的车辆"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x30"
+                    android:src="@mipmap/youjiantou" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_d" />
+
+            <LinearLayout
+                android:id="@+id/fragment_mine_community"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:layout_marginRight="@dimen/x40"
+                    android:src="@mipmap/my_community_build" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的社区"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x30"
+                    android:src="@mipmap/youjiantou" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_d" />
+
+            <LinearLayout
+                android:id="@+id/fragment_mine_customerService"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:layout_marginRight="@dimen/x40"
+                    android:src="@mipmap/grzx_zxkf" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="在线客服"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x30"
+                    android:src="@mipmap/youjiantou" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_d" />
+
+            <LinearLayout
+                android:id="@+id/fragment_mine_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:layout_marginRight="@dimen/x40"
+                    android:src="@mipmap/grzx_yjfk" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="建议反馈"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x30"
+                    android:src="@mipmap/youjiantou" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_d" />
+
+            <LinearLayout
+                android:id="@+id/fragment_mine_authentication"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:layout_marginRight="@dimen/x40"
+                    android:src="@mipmap/gerenzhongxin_woderenzheng" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="认证中心"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x30"
+                    android:src="@mipmap/youjiantou" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_d" />
+
+            <LinearLayout
+                android:id="@+id/fragment_mine_record"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:layout_marginRight="@dimen/x40"
+                    android:src="@mipmap/grzx_wodedingdan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的订单"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x30"
+                    android:src="@mipmap/youjiantou" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_d" />
+
+            <LinearLayout
+                android:id="@+id/fragment_mine_sjrk"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x90"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:layout_marginRight="@dimen/x40"
+                    android:src="@mipmap/grzx_shangjiarukou" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="商家入口"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x30"
+                    android:src="@mipmap/youjiantou" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

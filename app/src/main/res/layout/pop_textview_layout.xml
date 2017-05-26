@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/pop_textview_layout_textview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x68"
+        android:text="一键求助"
+        android:gravity="center"
+        android:background="@drawable/pop_sort_sect"
+        android:textColor="@color/color_3"
+        android:textSize="@dimen/y30" />
+</LinearLayout>

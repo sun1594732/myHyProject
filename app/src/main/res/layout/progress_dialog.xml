@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_view"
+    android:layout_width="@dimen/x280"
+    android:layout_height="@dimen/x280"
+    android:layout_margin="20dp"
+    android:background="@drawable/loding_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <View
+        android:layout_width="@dimen/x280"
+        android:layout_height="@dimen/x1"/>
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="@dimen/x80"
+        android:layout_height="@dimen/x80"
+        android:max="100"
+        android:src="@mipmap/loding" />
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:text="数据加载中…"
+        android:textColor="@color/color_3" />
+
+</LinearLayout>

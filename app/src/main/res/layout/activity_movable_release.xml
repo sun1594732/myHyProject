@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x70"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="@dimen/x150"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="主题："
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30" />
+
+                <EditText
+                    android:id="@+id/movable_release_theme"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/x30"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入主题"
+                    android:paddingLeft="@dimen/x10"
+                    android:paddingRight="@dimen/x10"
+                    android:textColor="@color/color_2d2d2d"
+                    android:textColorHint="@color/color_9"
+                    android:textSize="@dimen/y30" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x6"
+                android:background="@color/color_f4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/x150"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x24"
+                    android:gravity="right"
+                    android:text="活动行程："
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/x10">
+
+                    <EditText
+                        android:id="@+id/movable_release_stroke"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/x30"
+                        android:layout_marginTop="@dimen/x24"
+                        android:background="@null"
+                        android:gravity="top"
+                        android:hint="请输入活动行程"
+                        android:minLines="2"
+                        android:textColor="@color/color_2d2d2d"
+                        android:textColorHint="@color/color_9"
+                        android:textSize="@dimen/y30" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/x10"
+                        android:layout_marginRight="@dimen/x30"
+                        android:layout_marginTop="@dimen/x10"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/activity_movable_release_recyclerview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </android.support.v7.widget.RecyclerView>
+
+                        <ImageView
+                            android:id="@+id/activity_circle_publish_nonePic"
+                            android:layout_width="@dimen/x120"
+                            android:layout_height="@dimen/x120"
+                            android:background="@color/color_6"
+                            android:src="@mipmap/tianjiazhaopian" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/x20"
+                        android:layout_marginRight="@dimen/x30"
+                        android:layout_marginTop="@dimen/x10"
+                        android:text="(最多4张jpg。png格式 大小 2MB内750X240像素内)"
+                        android:textColor="@color/color_6"
+                        android:textSize="@dimen/y26" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x70"
+                android:gravity="center_vertical"
+                android:paddingRight="@dimen/x30">
+
+                <TextView
+                    android:layout_width="@dimen/x150"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="报名截止："
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30" />
+
+                <LinearLayout
+                    android:id="@+id/activity_movable_release_end_time_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/x10">
+
+                    <TextView
+                        android:id="@+id/movable_release_e_left"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColorHint="@color/color_9"
+                        android:hint="大于当前时间1小时"
+                        android:textColor="@color/color_2d2d2d"
+                        android:textSize="@dimen/y24" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/zhishijiantou" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginRight="@dimen/x20"
+                    android:text="至"
+                    android:textColor="@color/color_7"
+                    android:textSize="@dimen/y26" />
+
+                <LinearLayout
+                    android:id="@+id/activity_movable_release_end_time_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/movable_release_e_right"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/color_2d2d2d"
+                        android:textColorHint="@color/color_9"
+                        android:hint="报名结束时间"
+                        android:textSize="@dimen/y24" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/zhishijiantou" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x2"
+                android:background="@color/color_f4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x70"
+                android:gravity="center_vertical"
+                android:paddingRight="@dimen/x30">
+
+                <TextView
+                    android:layout_width="@dimen/x150"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="活动时间："
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30" />
+
+                <LinearLayout
+                    android:id="@+id/activity_movable_release_start_time_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/x10">
+
+                    <TextView
+                        android:id="@+id/movable_release_s_left"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="活动开始时间"
+                        android:textColor="@color/color_2d2d2d"
+                        android:textColorHint="@color/color_9"
+                        android:textSize="@dimen/y24" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/zhishijiantou" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginRight="@dimen/x20"
+                    android:text="至"
+                    android:textColor="@color/color_7"
+                    android:textSize="@dimen/y26" />
+
+                <LinearLayout
+                    android:id="@+id/activity_movable_release_start_time_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textColorHint="@color/color_9"
+                        android:hint="活动结束时间"
+                        android:id="@+id/movable_release_s_right"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="@color/color_2d2d2d"
+                        android:textSize="@dimen/y24" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/zhishijiantou" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x6"
+                android:background="@color/color_f4" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x2"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:background="@color/color_f4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x70"
+                android:layout_marginRight="@dimen/x30"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/x150"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="活动地点："
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30" />
+
+                <EditText
+                    android:id="@+id/movable_release_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="请输入活动地点"
+                    android:paddingLeft="@dimen/x10"
+                    android:singleLine="true"
+                    android:textColor="@color/color_2d2d2d"
+                    android:textColorHint="@color/color_9"
+                    android:textSize="@dimen/y30" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x6"
+                android:background="@color/color_f4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x64"
+                android:layout_marginRight="@dimen/x30"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/x150"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="活动线路："
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30" />
+
+                <EditText
+                    android:id="@+id/movable_release_route"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入活动路线"
+                    android:paddingLeft="@dimen/x10"
+                    android:singleLine="true"
+                    android:textColor="@color/color_2d2d2d"
+                    android:textColorHint="@color/color_9"
+                    android:textSize="@dimen/y30" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x2"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:background="@color/color_f4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x64"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/x150"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="报名条件："
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30" />
+
+
+                <EditText
+                    android:id="@+id/movable_release_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="请输入报名条件"
+                    android:paddingLeft="@dimen/x10"
+                    android:singleLine="true"
+                    android:textColor="@color/color_2d2d2d"
+                    android:textColorHint="@color/color_9"
+                    android:textSize="@dimen/y30" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x2"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:background="@color/color_f4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x30"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/x150"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x20"
+                    android:gravity="right"
+                    android:text="所需装备："
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30" />
+
+                <EditText
+                    android:id="@+id/movable_release_equip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/x20"
+                    android:layout_marginRight="@dimen/x30"
+                    android:layout_marginTop="@dimen/x20"
+                    android:background="@null"
+                    android:hint="请输入所需装备"
+                    android:lineSpacingExtra="@dimen/x5"
+                    android:maxLines="2"
+                    android:paddingLeft="@dimen/x10"
+                    android:textColor="@color/color_2d2d2d"
+                    android:textColorHint="@color/color_9"
+                    android:textSize="@dimen/y30" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x2"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginRight="@dimen/x20"
+                android:background="@color/color_f4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/x150"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x20"
+                    android:gravity="right"
+                    android:text="注意事项："
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30" />
+
+                <EditText
+                    android:id="@+id/movable_release_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/x20"
+                    android:layout_marginRight="@dimen/x30"
+                    android:layout_marginTop="@dimen/x20"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="请输入注意事项"
+                    android:lineSpacingExtra="@dimen/x5"
+                    android:lines="2"
+                    android:maxLines="2"
+                    android:paddingLeft="@dimen/x10"
+                    android:textColor="@color/color_2d2d2d"
+                    android:textColorHint="@color/color_9"
+                    android:textSize="@dimen/y30" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x6"
+                android:background="@color/color_f4" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/movable_release_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x80"
+        android:background="@color/color_1ccd9b"
+        android:gravity="center"
+        android:text="保存活动"
+        android:textSize="@dimen/y34" />
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_add_hand"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/layout_dialog_help_publish_photo_progress"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:progressDrawable="@drawable/progressbar_drawable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/layout_dialog_help_publish_photo_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/layout_dialog_help_publish_photo_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/x10"
+            android:background="@drawable/dialog_life_help_group"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="@dimen/x30"
+            android:text="确认删除当前选中图片？"
+            android:textColor="@color/color_6"
+            android:textSize="@dimen/y30" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:background="@color/color_d8" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/x10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/layout_dialog_help_publish_photo_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/x20"
+                android:text="取消删除"
+                android:textColor="@color/color_6"
+                android:textSize="@dimen/y26" />
+
+            <View
+                android:layout_width="@dimen/x1"
+                android:layout_height="match_parent"
+                android:background="@color/color_d8" />
+
+            <TextView
+                android:id="@+id/layout_dialog_help_publish_photo_sure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/x20"
+                android:text="确定删除"
+                android:textColor="@color/color_6"
+                android:textSize="@dimen/y26" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

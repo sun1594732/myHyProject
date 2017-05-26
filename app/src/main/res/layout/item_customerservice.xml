@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x200"
+    android:background="@color/color_f"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.hyzs.onekeyhelp.widget.RoundImageView
+        android:id="@+id/item_customerservice_icon"
+        android:layout_width="@dimen/x120"
+        android:layout_height="@dimen/x120"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30" />
+
+    <View
+        android:layout_width="@dimen/x1"
+        android:layout_height="match_parent"
+        android:background="@color/color_d" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_marginBottom="@dimen/x20"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_customerservice_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="帮助客服 - 妮妮"
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/y34" />
+
+        <TextView
+            android:id="@+id/item_customerservice_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x28"
+            android:drawableLeft="@mipmap/phone"
+            android:drawablePadding="@dimen/x28"
+            android:text="010-56421922"
+            android:textColor="@color/color_6"
+            android:textSize="@dimen/y26" />
+
+        <TextView
+            android:id="@+id/item_customerservice_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x20"
+            android:drawableLeft="@mipmap/time"
+            android:drawablePadding="@dimen/x28"
+            android:text="7:00~22:00在线客服"
+            android:textColor="@color/color_6"
+            android:textSize="@dimen/y26" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/x22"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/item_customerservice_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/talk" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在线等您"
+            android:layout_marginTop="@dimen/x10"
+            android:textColor="@color/color_9"
+            android:textSize="@dimen/y26" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginRight="@dimen/x30"
+        android:src="@mipmap/youjiantou" />
+</LinearLayout>

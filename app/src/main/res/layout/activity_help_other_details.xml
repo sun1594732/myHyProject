@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_help_other_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical"
+    tools:context="com.hyzs.onekeyhelp.lifehelp.view.activity.HelpOtherDetailsActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <include
+        android:id="@+id/layout_empty"
+        layout="@layout/layout_empty"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:orientation="vertical"
+
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+
+                <com.hyzs.onekeyhelp.widget.RoundImageView
+                    android:id="@+id/live_help_other_details_iv_face"
+                    android:layout_width="@dimen/x120"
+                    android:layout_height="@dimen/y120"
+                    android:layout_alignTop="@+id/fragment_live_help_me_have_tv_stat"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginTop="@dimen/x20"
+                    android:layout_toLeftOf="@+id/fragment_live_help_me_have_tv_name"
+
+                    android:layout_toStartOf="@+id/fragment_live_help_me_have_tv_name"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/talk" />
+
+                <TextView
+                    android:id="@+id/live_help_other_details_tv_chenghao"
+                    android:layout_width="@dimen/x80"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/live_help_other_details_iv_face"
+                    android:layout_marginLeft="@dimen/x52"
+                    android:layout_marginTop="@dimen/x16"
+                    android:text="     "
+                    android:textColor="#1ccd9b"
+                    android:textSize="@dimen/x18" />
+
+                <TextView
+                    android:id="@+id/live_help_other_details_tv_adress"
+                    android:layout_width="@dimen/x130"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/live_help_other_details_tv_chenghao"
+                    android:layout_marginBottom="@dimen/x10"
+                    android:layout_marginLeft="@dimen/x38"
+                    android:layout_marginTop="@dimen/x16"
+                    android:text=""
+
+                    android:textColor="#666666"
+                    android:textSize="@dimen/y26" />
+
+                <TextView
+                    android:id="@+id/live_help_other_details_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/y10"
+                    android:layout_marginLeft="@dimen/x55"
+
+                    android:layout_marginTop="@dimen/y20"
+                    android:layout_toRightOf="@id/live_help_other_details_tv_chenghao"
+                    android:text="白富美"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/x30"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/live_help_other_details_line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_below="@+id/activity_help_other_details_chat"
+                    android:layout_marginLeft="@dimen/x35"
+                    android:layout_marginRight="@dimen/x20"
+                    android:layout_marginTop="@dimen/y10"
+                    android:layout_toRightOf="@+id/live_help_other_details_iv_face"
+                    android:background="#f4f4f4" />
+
+                <TextView
+                    android:id="@+id/live_help_other_details_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/activity_help_other_details_chat"
+                    android:layout_marginLeft="@dimen/x38"
+                    android:layout_marginRight="@dimen/x20"
+                    android:layout_marginTop="@dimen/x20"
+                    android:layout_toRightOf="@+id/live_help_other_details_iv_face"
+                    android:singleLine="false"
+                    android:text="最近因为工作的原因想要在附近~！，最近因为工作的原因想要在附近。"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/x30" />
+
+                <!--四张图片-->
+
+                <TextView
+                    android:id="@+id/live_help_other_details_tv_stat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/live_help_other_details_tv_name"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_marginRight="@dimen/x20"
+                    android:layout_toRightOf="@+id/live_help_other_details_tv_zheng"
+                    android:text="等待帮助 ...."
+                    android:textColor="#666666"
+                    android:textSize="@dimen/x20" />
+
+                <ImageView
+                    android:id="@+id/activity_help_other_details_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/x10"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/activity_help_other_details_phone"
+                    android:src="@mipmap/xiangqingye_liaoitan" />
+
+                <ImageView
+                    android:layout_marginTop="@dimen/x10"
+                    android:id="@+id/activity_help_other_details_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginRight="@dimen/x30"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/xiangqingye_tonghua" />
+
+
+                <ImageView
+                    android:id="@+id/live_help_other_details_iv_idcard"
+                    android:layout_width="@dimen/x50"
+                    android:layout_height="@dimen/x35"
+                    android:layout_toRightOf="@+id/live_help_other_details_tv_name"
+                    android:layout_marginTop="@dimen/x20"
+                    android:background="@mipmap/identity" />
+
+
+                <LinearLayout
+                    android:id="@+id/live_help_other_details_ll_wrap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/live_help_other_details_info"
+                    android:layout_toEndOf="@+id/live_help_other_details_tv_adress"
+                    android:layout_toRightOf="@+id/live_help_other_details_tv_adress"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/live_help_other_details_ll_images2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/x20"
+                        android:visibility="gone"
+
+                        >
+
+                        <com.hyzs.onekeyhelp.widget.RoundImageView
+                            android:id="@+id/live_help_other_details_imageView1"
+                            android:layout_width="@dimen/x100"
+                            android:layout_height="@dimen/y100"
+                            android:layout_marginLeft="@dimen/x18"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/talk" />
+
+                        <com.hyzs.onekeyhelp.widget.RoundImageView
+                            android:id="@+id/live_help_other_details_imageView2"
+                            android:layout_width="@dimen/x100"
+                            android:layout_height="@dimen/y100"
+                            android:layout_marginLeft="@dimen/x18"
+
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/talk" />
+
+                        <com.hyzs.onekeyhelp.widget.RoundImageView
+                            android:id="@+id/live_help_other_details_imageView3"
+                            android:layout_width="@dimen/x100"
+                            android:layout_height="@dimen/y100"
+
+                            android:layout_marginLeft="@dimen/x18"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/talk" />
+
+
+                        <com.hyzs.onekeyhelp.widget.RoundImageView
+                            android:id="@+id/live_help_other_details_imageView4"
+                            android:layout_width="@dimen/x100"
+                            android:layout_height="@dimen/y100"
+
+                            android:layout_marginLeft="@dimen/x18"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/talk" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/x10"
+                        android:layout_marginTop="@dimen/x20"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/live_help_other_details_number"
+                            android:layout_width="@dimen/x160"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/x19"
+                            android:layout_toRightOf="@+id/live_help_other_details_iv_face"
+                            android:lineSpacingExtra="@dimen/x16"
+                            android:singleLine="false"
+                            android:text="收到帮助：125"
+                            android:textColor="#556666"
+                            android:textSize="@dimen/x20" />
+
+                        <TextView
+                            android:id="@+id/live_help_other_details_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/live_help_other_details_number"
+                            android:layout_alignBottom="@+id/live_help_other_details_number"
+                            android:layout_marginLeft="@dimen/x20"
+                            android:layout_toEndOf="@+id/live_help_other_details_tv_zheng"
+                            android:layout_toRightOf="@+id/live_help_other_details_tv_zheng"
+                            android:gravity="center_vertical"
+                            android:lineSpacingExtra="@dimen/y16"
+                            android:singleLine="false"
+                            android:text="3-7 11:25"
+                            android:textColor="#556666"
+                            android:textSize="@dimen/x20" />
+
+
+                        <TextView
+                            android:id="@+id/live_help_other_details_grade"
+                            android:layout_width="@dimen/x120"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/x50"
+                            android:layout_toRightOf="@+id/live_help_other_details_iv_face"
+                            android:lineSpacingExtra="@dimen/x16"
+                            android:singleLine="false"
+                            android:text="已获得积分"
+                            android:textColor="#556666"
+                            android:textSize="@dimen/x20"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/live_help_other_details_type"
+
+                            android:layout_width="@dimen/x160"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/live_help_other_details_iv_face"
+                            android:lineSpacingExtra="@dimen/x16"
+                            android:singleLine="false"
+
+                            android:text="1000分"
+                            android:textColor="@android:color/holo_red_light"
+                            android:textSize="@dimen/x20"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/live_help_other_details_tv_zheng"
+                    android:layout_width="@dimen/x40"
+                    android:layout_height="@dimen/x35"
+                    android:layout_alignBottom="@+id/live_help_other_details_iv_idcard"
+                    android:layout_marginLeft="@dimen/x8"
+                    android:layout_marginTop="@dimen/x20"
+                    android:layout_toEndOf="@+id/live_help_other_details_iv_idcard"
+                    android:layout_toRightOf="@+id/live_help_other_details_iv_idcard"
+                    android:background="@drawable/shape_15b521_2"
+                    android:gravity="center"
+                    android:text="证"
+                    android:textColor="@color/color_f"
+                    android:textSize="@dimen/y20" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/live_help_other_details_ll_wrap"
+                android:layout_marginLeft="@dimen/x20"
+                android:background="#f4f4f4"
+                android:paddingBottom="@dimen/x10" />
+
+            <LinearLayout
+                android:id="@+id/live_help_other_details_ll_reward"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/x20"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/live_help_other_details_ll_money_reward"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x60"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:text="总赏金:"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/y26" />
+
+                    <TextView
+                        android:id="@+id/live_help_other_details_tv_all_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:text="1000"
+                        android:textColor="#F12F2F"
+                        android:textSize="@dimen/y26" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x320"
+                        android:text="可分配赏金:"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/y26" />
+
+                    <TextView
+                        android:id="@+id/live_help_other_details_tv_may_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:text="500"
+                        android:textColor="#F12F2F"
+                        android:textSize="@dimen/y26" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#f4f4f4" />
+
+
+                <com.hyzs.onekeyhelp.widget.ListViewForScrollView
+                    android:id="@+id/live_help_other_details_lv_get_help"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/x20"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x80"
+                    android:orientation="vertical"
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/x25"
+                        android:text="帮助我"
+                        android:textColor="#666666"
+
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginTop="@dimen/x25"
+                        android:background="#f4f4f4" />
+
+
+                </LinearLayout>
+
+                <com.hyzs.onekeyhelp.widget.ListViewForScrollView
+                    android:id="@+id/live_help_other_details_ll_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <!--评论回复-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x20"
+        android:layout_marginTop="@dimen/x10"
+        android:background="#f4f4f4"
+        android:orientation="horizontal"
+
+        >
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/x10"
+            android:src="@drawable/shuru"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x60"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginRight="@dimen/x20"
+            android:background="@drawable/shape_life_help_getinfo"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/live_help_other_details_et_send_contxt"
+                android:layout_width="@dimen/x430"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="50px"
+                android:background="@null"
+                android:hint="输入聊天内容"
+                android:textColor="#666666"
+                android:textColorHint="#666666"
+                android:textSize="@dimen/y26"
+
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/live_help_other_details_tv_send"
+            android:layout_width="@dimen/x70"
+            android:layout_height="@dimen/x50"
+            android:layout_gravity="center"
+            android:background="@drawable/life_help_send_shape"
+            android:gravity="center"
+            android:text="发送"
+
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

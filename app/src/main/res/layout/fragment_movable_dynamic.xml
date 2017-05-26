@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f"
+    android:orientation="vertical">
+
+    <com.hyzs.onekeyhelp.widget.view.VRefresh
+        android:id="@+id/vrefresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/movable_dynamic_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/color_f4"
+            android:dividerHeight="@dimen/x2" />
+    </com.hyzs.onekeyhelp.widget.view.VRefresh>
+
+    <LinearLayout
+        android:id="@+id/fragment_movable_dynamic_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x98"
+        android:background="@color/color_f4"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:src="@mipmap/emoj" />
+
+        <EditText
+            android:id="@+id/fragment_movable_dynamic_et_context"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/x60"
+            android:layout_marginLeft="@dimen/x13"
+            android:layout_marginRight="@dimen/x13"
+            android:layout_weight="1"
+            android:background="@drawable/search_back"
+            android:textColor="#999999"
+            android:textColorHint="#999999" />
+
+        <ImageView
+            android:id="@+id/fragment_movable_dynamic_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x20"
+            android:src="@mipmap/fasong" />
+    </LinearLayout>
+</LinearLayout>

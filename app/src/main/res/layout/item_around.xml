@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/around_activity_userinfo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x125"
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_around_icon"
+            android:layout_width="@dimen/x86"
+            android:layout_height="@dimen/x86"
+            android:layout_marginBottom="@dimen/x18"
+            android:layout_marginLeft="@dimen/x28"
+            android:layout_marginTop="@dimen/x18"
+            android:src="@mipmap/beauty" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="@dimen/x78"
+            android:layout_marginLeft="@dimen/x28"
+            android:background="@color/color_d8" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/item_around_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x28"
+                    android:layout_marginTop="@dimen/x28"
+                    android:text="白富美"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30" />
+
+                <TextView
+                    android:id="@+id/item_around_community"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_marginTop="@dimen/x28"
+                    android:text="康惠园小区"
+                    android:textColor="@color/color_9"
+                    android:textSize="@dimen/y26" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/item_around_identity"
+                        android:layout_width="@dimen/x46"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/x22"
+                        android:layout_marginLeft="@dimen/x28"
+                        android:layout_marginTop="@dimen/x10"
+                        android:background="@mipmap/identity"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/item_around_zheng"
+                        android:layout_width="@dimen/x30"
+                        android:layout_height="@dimen/x30"
+                        android:layout_marginLeft="@dimen/x4"
+                        android:layout_marginTop="@dimen/x10"
+                        android:background="@drawable/shape_f81302_zheng"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/x2"
+                        android:paddingLeft="@dimen/x5"
+                        android:paddingRight="@dimen/x5"
+                        android:paddingTop="@dimen/x2"
+                        android:text="证"
+                        android:textSize="@dimen/y20"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/item_around_shang"
+                        android:layout_width="@dimen/x30"
+                        android:layout_height="@dimen/x30"
+                        android:layout_marginLeft="@dimen/x4"
+                        android:layout_marginTop="@dimen/x10"
+                        android:background="@drawable/shape_dd4337_8"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/x2"
+                        android:paddingLeft="@dimen/x5"
+                        android:paddingRight="@dimen/x5"
+                        android:paddingTop="@dimen/x2"
+                        android:text="商"
+                        android:textSize="@dimen/y20"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/item_around_fu"
+                        android:layout_width="@dimen/x30"
+                        android:layout_height="@dimen/x30"
+                        android:layout_marginLeft="@dimen/x4"
+                        android:layout_marginTop="@dimen/x10"
+                        android:background="@drawable/shape_15b521_2"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/x2"
+                        android:paddingLeft="@dimen/x5"
+                        android:paddingRight="@dimen/x5"
+                        android:paddingTop="@dimen/x2"
+                        android:text="服"
+                        android:textSize="@dimen/y20"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/item_around_wu"
+                        android:layout_width="@dimen/x30"
+                        android:layout_height="@dimen/x30"
+                        android:layout_marginLeft="@dimen/x4"
+                        android:layout_marginTop="@dimen/x10"
+                        android:background="@drawable/shape_d8711e_3"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/x2"
+                        android:paddingLeft="@dimen/x5"
+                        android:paddingRight="@dimen/x5"
+                        android:paddingTop="@dimen/x2"
+                        android:text="物"
+                        android:textSize="@dimen/y20"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/item_around_jiu"
+                        android:layout_width="@dimen/x30"
+                        android:layout_height="@dimen/x30"
+                        android:layout_marginLeft="@dimen/x4"
+                        android:layout_marginTop="@dimen/x10"
+                        android:background="@drawable/shape_0_f4_solid"
+                        android:paddingBottom="@dimen/x2"
+                        android:paddingLeft="@dimen/x6"
+                        android:paddingRight="@dimen/x6"
+                        android:paddingTop="@dimen/x2"
+                        android:text="救"
+                        android:textColor="@color/color_f"
+                        android:textSize="@dimen/y20"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/item_around_ke"
+                        android:layout_width="@dimen/x30"
+                        android:layout_height="@dimen/x30"
+                        android:layout_marginLeft="@dimen/x4"
+                        android:layout_marginTop="@dimen/x10"
+                        android:background="@drawable/shape_15b521_2"
+                        android:paddingBottom="@dimen/x2"
+                        android:paddingLeft="@dimen/x6"
+                        android:paddingRight="@dimen/x6"
+                        android:paddingTop="@dimen/x2"
+                        android:text="客"
+                        android:textColor="@color/color_f"
+                        android:textSize="@dimen/y26"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/item_around_jie"
+                        android:layout_width="@dimen/x30"
+                        android:layout_height="@dimen/x30"
+                        android:layout_marginLeft="@dimen/x4"
+                        android:layout_marginTop="@dimen/x10"
+                        android:background="@drawable/shape_f751c6"
+                        android:paddingBottom="@dimen/x2"
+                        android:paddingLeft="@dimen/x6"
+                        android:paddingRight="@dimen/x6"
+                        android:paddingTop="@dimen/x2"
+                        android:text="街"
+                        android:textColor="@color/color_f"
+                        android:textSize="@dimen/y26"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/item_around_lin"
+                        android:layout_width="@dimen/x30"
+                        android:layout_height="@dimen/x30"
+                        android:layout_marginLeft="@dimen/x4"
+                        android:layout_marginTop="@dimen/x10"
+                        android:background="@drawable/shape_1ccd9b_6_soild"
+                        android:paddingBottom="@dimen/x2"
+                        android:paddingLeft="@dimen/x6"
+                        android:paddingRight="@dimen/x6"
+                        android:paddingTop="@dimen/x2"
+                        android:text="邻"
+                        android:textColor="@color/color_f"
+                        android:textSize="@dimen/y26"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/item_around_jin"
+                        android:layout_width="@dimen/x30"
+                        android:layout_height="@dimen/x30"
+                        android:layout_marginLeft="@dimen/x4"
+                        android:layout_marginTop="@dimen/x10"
+                        android:background="@drawable/shape_f9404a"
+                        android:paddingBottom="@dimen/x2"
+                        android:paddingLeft="@dimen/x6"
+                        android:paddingRight="@dimen/x6"
+                        android:paddingTop="@dimen/x2"
+                        android:text="紧"
+                        android:textColor="@color/color_f"
+                        android:textSize="@dimen/y26"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/item_around_wei"
+                        android:layout_width="@dimen/x30"
+                        android:layout_height="@dimen/x30"
+                        android:layout_marginLeft="@dimen/x4"
+                        android:layout_marginTop="@dimen/x10"
+                        android:background="@drawable/shape_408ff9"
+                        android:paddingBottom="@dimen/x2"
+                        android:paddingLeft="@dimen/x6"
+                        android:paddingRight="@dimen/x6"
+                        android:paddingTop="@dimen/x2"
+                        android:text="委"
+                        android:textColor="@color/color_f"
+                        android:textSize="@dimen/y26"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/item_around_jia"
+                        android:layout_width="@dimen/x30"
+                        android:layout_height="@dimen/x30"
+                        android:layout_marginLeft="@dimen/x4"
+                        android:layout_marginTop="@dimen/x10"
+                        android:background="@drawable/shape_f96840"
+                        android:paddingBottom="@dimen/x2"
+                        android:paddingLeft="@dimen/x6"
+                        android:paddingRight="@dimen/x6"
+                        android:paddingTop="@dimen/x2"
+                        android:text="家"
+                        android:textColor="@color/color_f"
+                        android:textSize="@dimen/y26"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x10"
+                    android:drawableLeft="@mipmap/wodebangzhu_xiangqing_jvli"
+                    android:drawablePadding="@dimen/x10"
+                    android:text="距离"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y26" />
+
+                <TextView
+                    android:id="@+id/item_around_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x10"
+                    android:layout_marginRight="@dimen/x20"
+                    android:layout_marginTop="@dimen/x10"
+                    android:text="200m"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y26" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/item_around_addFriend"
+            android:layout_width="@dimen/x120"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/x38"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_marginTop="@dimen/x38"
+            android:background="@drawable/shape_1ccd9b_6_soild"
+            android:gravity="center"
+            android:text="加好友"
+            android:textColor="@color/color_f"
+            android:textSize="@dimen/y30" />
+    </LinearLayout>
+</LinearLayout>

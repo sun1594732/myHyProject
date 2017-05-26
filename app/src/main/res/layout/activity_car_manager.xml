@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <include
+        android:id="@+id/carmarange_ll_title"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_below="@id/carmarange_ll_title"
+        android:id="@+id/rl_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_f" >
+
+        <com.hyzs.onekeyhelp.widget.SyncHorizontalScrollView
+            android:id="@+id/carmarange_mHsv"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/x180"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+
+            <RelativeLayout
+                android:id="@+id/carmarange_rl_nav"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="@color/color_f" >
+
+                <RadioGroup
+                    android:id="@+id/carmarange_rg_nav_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/x180"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/color_f"
+                    android:paddingTop="@dimen/x30"
+                    android:orientation="horizontal" >
+                </RadioGroup>
+
+                <ImageView
+                    android:id="@+id/carmarange_iv_nav_indicator"
+                    android:layout_width="@dimen/y2"
+                    android:layout_height="@dimen/y4"
+                    android:layout_alignParentBottom="true"
+                    android:background="#1CCD9B"
+                    android:contentDescription="nav_desc"
+                    android:scaleType="matrix" />
+            </RelativeLayout>
+        </com.hyzs.onekeyhelp.widget.SyncHorizontalScrollView>
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mViewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/rl_tab"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+
+
+</RelativeLayout>

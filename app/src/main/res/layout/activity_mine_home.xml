@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <include
+        android:id="@+id/layout_empty"
+        layout="@layout/layout_empty" />
+
+    <ScrollView
+        android:id="@+id/activity_mine_home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/x170"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.hyzs.onekeyhelp.widget.RoundImageView
+                        android:id="@+id/activity_mine_home_icon"
+                        android:layout_width="@dimen/x140"
+                        android:layout_height="@dimen/x140"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/x30"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/icon_replace" />
+
+                    <TextView
+
+                        android:id="@+id/activity_mine_home_nick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/x12"
+                        android:text="草根英雄"
+                        android:textColor="@color/color_f7221d"
+                        android:textSize="@dimen/y26" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/x140"
+                        android:layout_height="@dimen/x50"
+                        android:layout_marginLeft="@dimen/x15"
+                        android:layout_marginRight="@dimen/x15"
+                        android:layout_marginTop="@dimen/x10"
+                        android:background="@mipmap/biankuang1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/x1"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/activity_mine_home_helpNumber"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="18"
+                            android:textColor="@color/color_f7221d"
+                            android:textSize="@dimen/y32" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/x140"
+                        android:layout_height="@dimen/x50"
+                        android:layout_marginBottom="@dimen/x14"
+                        android:layout_marginLeft="@dimen/x15"
+                        android:layout_marginRight="@dimen/x15"
+                        android:layout_marginTop="@dimen/x12"
+                        android:background="@mipmap/biankuang2"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/x1"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/activity_mine_home_heroRanking"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="999"
+                            android:textColor="@color/color_f7221d"
+                            android:textSize="@dimen/y32" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x28"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/activity_mine_home_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="草根英雄"
+                            android:textColor="@color/color_3"
+                            android:textSize="@dimen/y32" />
+
+                        <ImageView
+                            android:id="@+id/activity_mine_home_idcard"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/x10"
+                            android:src="@mipmap/identity" />
+
+                        <TextView
+                            android:id="@+id/activity_mine_home_zheng"
+                            android:layout_width="@dimen/x35"
+                            android:layout_height="@dimen/x35"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/x10"
+                            android:background="@drawable/shape_1ccd9b_6_soild"
+                            android:gravity="center"
+                            android:text="证"
+                            android:textColor="@color/color_f"
+                            android:textSize="@dimen/y20" />
+
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/activity_mine_home_attention"
+                            android:layout_width="@dimen/x110"
+                            android:layout_height="@dimen/x40"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="@dimen/x30"
+                            android:background="@drawable/shape_1ccd9b_4_soild"
+                            android:gravity="center"
+                            android:padding="@dimen/x4"
+                            android:text="加好友"
+                            android:textColor="@color/color_f"
+                            android:textSize="@dimen/y26"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/iv_talk_mine_home"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/x30"
+                            android:background="@mipmap/talk" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/activity_mine_home_sign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x30"
+                        android:text="努力工作，努力工作，努力工作，努力工作，努力工作，努力工作"
+                        android:textColor="@color/color_3"
+                        android:textSize="@dimen/y26" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x1"
+                        android:layout_marginTop="@dimen/x14"
+                        android:background="@color/color_f4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x12"
+                        android:text="帮助过的人："
+                        android:textColor="@color/color_3"
+                        android:textSize="@dimen/y26" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x1"
+                        android:layout_marginTop="@dimen/x14"
+                        android:background="@color/color_f4" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/x20"
+                        android:layout_marginTop="@dimen/x20"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/activity_mine_home_help_nopic"
+                            android:layout_width="@dimen/x400"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/x40"
+                            android:gravity="center"
+                            android:text="这家伙很懒，最近没有帮助别人"
+                            android:textColor="@color/color_6"
+                            android:textSize="@dimen/y26"
+                            android:visibility="gone" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/circleImageView1"
+                            android:layout_width="@dimen/x80"
+                            android:layout_height="@dimen/x80"
+                            android:layout_marginRight="@dimen/x20"
+                            android:src="@mipmap/replace_hybb" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/circleImageView2"
+
+                            android:layout_width="@dimen/x80"
+                            android:layout_height="@dimen/x80"
+                            android:layout_marginRight="@dimen/x20"
+                            android:src="@mipmap/replace_hybb" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/circleImageView3"
+
+                            android:layout_width="@dimen/x80"
+                            android:layout_height="@dimen/x80"
+                            android:layout_marginRight="@dimen/x20"
+                            android:src="@mipmap/replace_hybb" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/circleImageView4"
+                            android:layout_width="@dimen/x80"
+                            android:layout_height="@dimen/x80"
+                            android:layout_marginRight="@dimen/x20"
+                            android:src="@mipmap/replace_hybb" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/circleImageView5"
+                            android:layout_width="@dimen/x80"
+                            android:layout_height="@dimen/x80"
+                            android:layout_marginRight="@dimen/x20"
+                            android:src="@mipmap/ic_launcher"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:gravity="right">
+
+                            <ImageView
+                                android:id="@+id/imageView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="@dimen/x30"
+                                android:src="@mipmap/youjiantou" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_f4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x70"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:drawableLeft="@mipmap/sheqv"
+                    android:drawablePadding="@dimen/x20"
+                    android:text="社区"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y26" />
+
+                <View
+                    android:layout_width="@dimen/x1"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/x20"
+                    android:background="@color/color_f4" />
+
+                <TextView
+                    android:id="@+id/activity_mine_home_tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:text="康慧园小区"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y26" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/x30"
+                    android:src="@mipmap/youjiantou" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_f4" />
+
+            <LinearLayout
+                android:id="@+id/activity_mine_home_album"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x140"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginTop="@dimen/x20"
+                    android:drawableLeft="@mipmap/xiangce_small"
+                    android:drawablePadding="@dimen/x20"
+                    android:text="相册"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y26" />
+
+                <View
+                    android:layout_width="@dimen/x1"
+                    android:layout_height="@dimen/x30"
+                    android:layout_margin="@dimen/x20"
+                    android:background="@color/color_f4" />
+
+                <TextView
+                    android:id="@+id/activity_mine_home_album_nopic"
+                    android:layout_width="@dimen/x400"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:gravity="center"
+                    android:text="这家伙很懒，相册没有内容"
+                    android:textColor="@color/color_6"
+                    android:textSize="@dimen/y32"
+                    android:visibility="gone" />
+
+                <com.hyzs.onekeyhelp.widget.RoundImageView
+                    android:id="@+id/photos1"
+                    android:layout_width="@dimen/x100"
+                    android:layout_height="@dimen/x100"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/replace_hybb"
+                    android:scaleType="centerCrop"/>
+
+                <com.hyzs.onekeyhelp.widget.RoundImageView
+                    android:id="@+id/photos2"
+                    android:layout_width="@dimen/x100"
+                    android:layout_height="@dimen/x100"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:src="@mipmap/replace_hybb"
+                    android:scaleType="centerCrop"/>
+
+                <com.hyzs.onekeyhelp.widget.RoundImageView
+                    android:id="@+id/photos3"
+                    android:layout_width="@dimen/x100"
+                    android:layout_height="@dimen/x100"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:src="@mipmap/replace_hybb"
+                    android:scaleType="centerCrop"/>
+
+                <com.hyzs.onekeyhelp.widget.RoundImageView
+                    android:id="@+id/photos4"
+                    android:scaleType="centerCrop"
+                    android:layout_width="@dimen/x100"
+                    android:layout_height="@dimen/x100"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:src="@mipmap/replace_hybb" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/photos_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/x30"
+                    android:src="@mipmap/youjiantou" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_f4" />
+
+            <LinearLayout
+                android:id="@+id/activity_mine_home_circle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginTop="@dimen/x20"
+                    android:drawableLeft="@mipmap/quanzi_small"
+                    android:drawablePadding="@dimen/x20"
+                    android:text="圈子"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y26" />
+
+                <View
+                    android:layout_width="@dimen/x1"
+                    android:layout_height="@dimen/x30"
+                    android:layout_margin="@dimen/x20"
+                    android:background="@color/color_f4" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/activity_mine_home_circle_nopic"
+                        android:layout_width="@dimen/x400"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/x40"
+                        android:layout_marginTop="@dimen/x20"
+                        android:gravity="center"
+                        android:text="这家伙很懒，最近没有发圈子"
+                        android:textColor="@color/color_6"
+                        android:textSize="@dimen/y26"
+                        android:visibility="gone" />
+
+                    <com.hyzs.onekeyhelp.widget.ListViewForScrollView
+                        android:id="@+id/lv_circle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_f4" />
+
+            <LinearLayout
+                android:id="@+id/activity_mine_home_active"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginTop="@dimen/x20"
+                    android:drawableLeft="@mipmap/huodong_small"
+                    android:drawablePadding="@dimen/x20"
+                    android:text="活动"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y26" />
+
+                <View
+                    android:layout_width="@dimen/x1"
+                    android:layout_height="@dimen/x30"
+                    android:layout_margin="@dimen/x20"
+                    android:background="@color/color_f4" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/activity_mine_home_action_nopic"
+                        android:layout_width="@dimen/x400"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/x40"
+                        android:layout_marginTop="@dimen/x20"
+                        android:gravity="center"
+                        android:text="这家伙很懒，最近没有参加活动"
+                        android:textColor="@color/color_6"
+                        android:textSize="@dimen/y26"
+                        android:visibility="gone" />
+
+                    <com.hyzs.onekeyhelp.widget.ListViewForScrollView
+                        android:id="@+id/lv_action"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/activity_mine_home_addContact"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x60"
+        android:background="@color/color_1ccd9b"
+        android:gravity="center"
+        android:text="点击关注"
+        android:textColor="@color/color_f"
+        android:textSize="@dimen/y32" />
+</LinearLayout>

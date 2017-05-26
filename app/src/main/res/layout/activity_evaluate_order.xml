@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_evaluate_order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x286"
+                android:orientation="horizontal">
+
+                <com.hyzs.onekeyhelp.widget.RoundImageView
+                    android:id="@+id/activity_evaluate_order_icon"
+                    android:layout_width="@dimen/x100"
+                    android:layout_height="@dimen/x100"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginTop="@dimen/x30"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginTop="@dimen/x30"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/activity_evaluate_order_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="专业擦玻璃专业擦玻璃专业擦玻璃"
+                        android:textColor="@color/color_3"
+                        android:textSize="@dimen/y30" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x34"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="收费标准"
+                            android:textColor="@color/color_6"
+                            android:textSize="@dimen/y26" />
+
+                        <TextView
+                            android:id="@+id/activity_evaluate_order_toll_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/x10"
+                            android:text="150/"
+                            android:textColor="@color/color_d8060b"
+                            android:textSize="@dimen/y30" />
+
+                        <TextView
+                            android:id="@+id/activity_evaluate_order_toll_unit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3小时"
+                            android:textColor="@color/color_d8060b"
+                            android:textSize="@dimen/y26" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x34"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="预约时间"
+                            android:textColor="@color/color_6"
+                            android:textSize="@dimen/y26" />
+
+                        <TextView
+                            android:id="@+id/activity_evaluate_order_time1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/x10"
+                            android:text="2017-05-05 11:00"
+                            android:textColor="@color/color_d8060b"
+                            android:textSize="@dimen/y26" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/activity_evaluate_order_time2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x22"
+                        android:text="2017-05-03 15:00"
+                        android:textColor="@color/color_6"
+                        android:textSize="@dimen/y26" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="@dimen/x30"
+                    android:layout_marginRight="@dimen/x30"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/activity_evaluate_order_call_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/xiangqingye_tonghua" />
+
+                    <ImageView
+                        android:id="@+id/activity_evaluate_order_chat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x12"
+                        android:src="@mipmap/xiangqingye_liaoitan" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_d" />
+
+            <RadioGroup
+                android:id="@+id/activity_evaluate_order_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x94"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RadioButton
+                    android:id="@+id/activity_evaluate_order_left"
+                    style="@style/evaluate_style"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/rb_good_bg_selector"
+                    android:text="好评" />
+
+                <RadioButton
+                    android:id="@+id/activity_evaluate_order_center"
+                    style="@style/evaluate_style"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/x150"
+                    android:drawableLeft="@drawable/rb_center_bg_selector"
+                    android:text="中评" />
+
+                <RadioButton
+                    android:id="@+id/activity_evaluate_order_right"
+                    style="@style/evaluate_style"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/x150"
+                    android:layout_marginRight="@dimen/x30"
+                    android:drawableLeft="@drawable/rb_difference_bg_selector"
+                    android:text="差评" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x40"
+                android:layout_marginTop="@dimen/x30"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:text="服务评价"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/y30" />
+
+                <com.hyzs.onekeyhelp.widget.RatingBar
+                    android:id="@+id/activity_evaluate_order_rating_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x28"
+                    app:starCount="5"
+                    app:starEmpty="@mipmap/xingg"
+                    app:starFill="@mipmap/xing"
+                    app:starHalf="@mipmap/xing"
+                    app:starImageSize="@dimen/x50"
+                    app:starPadding="@dimen/x30"
+                    app:starStep="5.0"
+                    app:stepSize="Full" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/color_d" />
+
+            <EditText
+                android:id="@+id/activity_evaluate_order_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x30"
+                android:layout_marginTop="@dimen/x30"
+                android:background="@null"
+                android:hint="服务满足您的期待吗？快将您的体验分享给大家吧~"
+                android:lineSpacingMultiplier="1.2"
+                android:textColor="@color/color_3"
+                android:textColorHint="@color/color_9"
+                android:textSize="@dimen/y26" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/x170"
+                android:text="晒出您的服务照片吧~"
+                android:textColor="@color/color_9"
+                android:textSize="@dimen/y26" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x30"
+                android:layout_marginRight="@dimen/x30"
+                android:layout_marginTop="@dimen/x20"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/activity_opinion_recycler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <ImageView
+                    android:id="@+id/activity_opinion_add_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/tianjiazhaopian" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

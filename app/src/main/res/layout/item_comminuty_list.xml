@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@color/color_f"
+    android:layout_height="@dimen/x160">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/my_community_build"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/x30"
+        android:layout_marginBottom="@dimen/x30"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/item_comminuty_list_name"
+            android:layout_width="wrap_content"
+            android:text="康惠园小区"
+            android:textColor="@color/color_5"
+            android:textSize="@dimen/y34"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/item_comminuty_list_address"
+            android:layout_marginTop="@dimen/x20"
+            android:textColor="@color/color_9"
+            android:textSize="@dimen/y26"
+            android:text="位置：朝阳区双桥南路"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/x1"
+        android:layout_gravity="center_vertical"
+        android:background="@color/color_d"
+        android:layout_height="@dimen/x100" />
+    <LinearLayout
+        android:id="@+id/item_community_set_ll"
+        android:layout_width="@dimen/x194"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@mipmap/my_community_default"
+            android:layout_marginBottom="@dimen/x14"
+            android:id="@+id/item_comminuty_list_set"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="设为默认"
+            android:id="@+id/item_comminuty_list_set_text"
+            android:textColor="@color/color_9"
+            android:textSize="@dimen/y34"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+</LinearLayout>

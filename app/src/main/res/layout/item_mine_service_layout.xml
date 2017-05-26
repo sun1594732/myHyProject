@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_mine_service"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f"
+    android:orientation="horizontal">
+
+    <com.hyzs.onekeyhelp.widget.RoundImageView
+        android:id="@+id/item_mine_service_icon"
+        android:layout_width="@dimen/x120"
+        android:layout_height="@dimen/x120"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="@dimen/x40"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_replace" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x40"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="@dimen/x40"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_mine_service_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="王阿姨"
+                android:textColor="@color/color_3"
+                android:textSize="@dimen/y34" />
+
+            <TextView
+                android:id="@+id/item_mine_service_native_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:text="山西人"
+                android:textColor="@color/color_9"
+                android:textSize="@dimen/y26" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x32"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推荐指数："
+                android:textColor="@color/color_9"
+                android:textSize="@dimen/y26" />
+
+            <RatingBar
+                android:id="@+id/item_mine_service_ratingbar"
+                style="@style/roomRatingBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:rating="1.5"
+                android:stepSize="0.15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收费标准："
+                android:textColor="@color/color_9"
+                android:textSize="@dimen/y26" />
+
+            <TextView
+                android:id="@+id/item_mine_service_charges"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3500元/月"
+                android:textColor="@color/color_d8060b"
+                android:textSize="@dimen/y28" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="距离范围："
+                android:textColor="@color/color_9"
+                android:textSize="@dimen/y26" />
+
+            <TextView
+                android:id="@+id/item_mine_service_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="距您10km"
+                android:textColor="@color/color_3"
+                android:textSize="@dimen/y26" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_mine_service_tag1"
+                android:layout_width="@dimen/x115"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_f3a3a4_border"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="@dimen/x3"
+                android:text="擅长面食"
+                android:textColor="@color/color_f3a3a4"
+                android:textSize="@dimen/y26" />
+
+            <TextView
+                android:id="@+id/item_mine_service_tag2"
+                android:layout_width="@dimen/x115"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x14"
+                android:background="@drawable/shape_cfca6e_border"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="@dimen/x3"
+                android:text="擅长面食"
+                android:textColor="@color/color_cfca6e"
+                android:textSize="@dimen/y26" />
+
+            <TextView
+                android:id="@+id/item_mine_service_tag3"
+                android:layout_width="@dimen/x115"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x14"
+                android:background="@drawable/shape_f3a3a4_border"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="@dimen/x3"
+                android:text="全职"
+                android:textColor="@color/color_f48d2e"
+                android:textSize="@dimen/y26" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/x40"
+        android:layout_marginRight="@dimen/x30"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/item_mine_service_layout_call_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/xiangqingye_tonghua" />
+
+        <ImageView
+            android:id="@+id/item_mine_service_layout_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x14"
+            android:src="@mipmap/xiangqingye_liaoitan" />
+
+    </LinearLayout>
+</LinearLayout>

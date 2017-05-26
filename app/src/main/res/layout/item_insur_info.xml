@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@color/color_f"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/x30"
+    android:paddingRight="@dimen/x30"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="@dimen/x3"
+        android:layout_height="@dimen/x30"
+        android:background="@color/color_0349a9"/>
+    <TextView
+        android:id="@+id/item_insur_info_left"
+        android:layout_width="wrap_content"
+        android:textColor="@color/color_3"
+        android:textSize="@dimen/y30"
+        android:text="王某某"
+        android:layout_marginLeft="@dimen/x10"
+        android:layout_marginTop="@dimen/x15"
+        android:layout_marginBottom="@dimen/x15"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/item_insur_info_center"
+        android:layout_width="wrap_content"
+        android:textColor="@color/color_3"
+        android:textSize="@dimen/y30"
+        android:text="某某公司"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="@dimen/x1" />
+    <ImageView
+        android:id="@+id/item_insur_info_right"
+        android:layout_width="wrap_content"
+        android:src="@mipmap/shuru"
+        android:layout_height="wrap_content" />
+</LinearLayout>

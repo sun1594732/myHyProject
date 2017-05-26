@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x160"
+    android:background="@color/color_f"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="@dimen/x1"
+        android:layout_height="@dimen/x160" />
+
+    <TextView
+        android:id="@+id/item_manager_status"
+        android:layout_width="@dimen/x80"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x30"
+        android:drawablePadding="@dimen/x10"
+        android:drawableTop="@mipmap/blank"
+        android:text="待审核"
+        android:textColor="@color/color_0"
+        android:textSize="@dimen/y22" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_manager_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/x34"
+            android:text="专业擦玻璃3小时"
+            android:textColor="@color/color_0"
+            android:textSize="@dimen/y30" />
+
+        <TextView
+            android:id="@+id/item_manager_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginTop="@dimen/x18"
+            android:text="金额  12/次"
+            android:textColor="@color/color_ef1111"
+            android:textSize="@dimen/y26" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_manager_status2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="@dimen/x36"
+        android:text="已上架"
+        android:textColor="@color/color_6"
+        android:textSize="@dimen/y26" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/x1"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/item_manager_btn"
+        android:layout_width="@dimen/x120"
+        android:layout_height="@dimen/x60"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/x30"
+        android:background="@drawable/f9764a_6"
+        android:gravity="center"
+        android:text="下架"
+        android:textColor="@color/color_f"
+        android:textSize="@dimen/y30" />
+</LinearLayout>

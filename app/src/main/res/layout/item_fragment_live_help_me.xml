@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <com.hyzs.onekeyhelp.widget.RoundImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/fragment_live_help_me_have_iv_face"
+        android:layout_width="@dimen/x120"
+        android:layout_height="@dimen/y120"
+        android:src="@mipmap/talk"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_marginLeft="@dimen/x20"
+         />
+    <TextView
+        android:layout_below="@id/fragment_live_help_me_have_iv_face"
+        android:layout_width="wrap_content"
+        android:paddingLeft="@dimen/x30"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y10"
+        android:id="@+id/fragment_live_help_me_have_tv_chenghao"
+        android:text="草根英雄     "
+        android:textColor="#1ccd9b"
+        android:textSize="@dimen/x26"
+        android:layout_alignRight="@+id/fragment_live_help_me_have_iv_face"
+        android:layout_alignEnd="@+id/fragment_live_help_me_have_iv_face" />
+
+    <TextView
+        android:layout_below="@id/fragment_live_help_me_have_tv_chenghao"
+        android:layout_marginTop="@dimen/y10"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_live_help_me_have_tv_adress" android:text="康惠园小区"
+        android:textColor="#666666"
+        android:textSize="@dimen/y26"
+        android:layout_marginLeft="@dimen/x20"
+
+        android:layout_toLeftOf="@+id/fragment_live_help_me_have_tv_name"
+        android:layout_toStartOf="@+id/fragment_live_help_me_have_tv_name" />
+
+    <TextView
+        android:layout_toRightOf="@id/fragment_live_help_me_have_tv_chenghao"
+        android:layout_marginTop="@dimen/y20"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_live_help_me_have_tv_name"
+        android:layout_marginLeft="@dimen/x38"
+        android:text="白富美"
+        android:textColor="#666666"
+        android:textSize="@dimen/x30"
+        android:layout_marginBottom="@dimen/y10"
+        />
+    <View
+        android:id="@+id/fragment_live_help_me_have_line1"
+        android:layout_width="match_parent"
+        android:background="#c9c9c9"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/y10"
+        android:layout_below="@+id/fragment_live_help_me_have_tv_stat"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_toRightOf="@+id/fragment_live_help_me_have_iv_face"
+        android:layout_marginLeft="@dimen/x35"
+        />
+    <TextView
+        android:layout_below="@id/fragment_live_help_me_have_line1"
+        android:layout_marginTop="@dimen/x12"
+        android:layout_toRightOf="@+id/fragment_live_help_me_have_iv_face"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_live_help_me_have_info"
+        android:layout_marginLeft="@dimen/x38"
+        android:text="最近因为工作的原因想要在附近~！，最近因为工作的原因想要在附近。"
+        android:singleLine="false"
+        android:textColor="#666666"
+        android:textSize="@dimen/x30"
+        />
+
+    <!--四张图片-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <!--图片 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+        </LinearLayout>
+
+        <!--文字 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_live_help_me_have_tv_stat"
+        android:text="等待帮助 ...."
+        android:textColor="#666666"
+        android:textSize="@dimen/x26"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_alignBottom="@+id/fragment_live_help_me_have_tv_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+
+    <ImageView
+        android:id="@+id/fragment_live_help_me_have_iv_idcard"
+        android:layout_width="@dimen/x50"
+        android:layout_height="@dimen/x35"
+        android:background="@mipmap/identity"
+        android:layout_above="@+id/fragment_live_help_me_have_line1"
+        android:layout_toRightOf="@+id/fragment_live_help_me_have_tv_name"
+       />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:id="@+id/fragment_live_help_me_have_ll_wrap"
+        android:layout_below="@+id/fragment_live_help_me_have_info"
+        android:layout_toRightOf="@+id/fragment_live_help_me_have_tv_adress"
+        android:layout_toEndOf="@+id/fragment_live_help_me_have_tv_adress"
+        android:layout_marginTop="@dimen/x20"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/x50"
+            android:id="@+id/fragment_live_help_me_have_ll_images2"
+
+            >
+
+            <com.hyzs.onekeyhelp.widget.RoundImageView
+                android:scaleType="centerCrop"
+                android:layout_width="@dimen/x100"
+                android:layout_height="@dimen/y100"
+                android:src="@mipmap/talk"
+                android:layout_marginLeft="@dimen/x18"
+                android:id="@+id/fragment_live_help_me_have_imageView1" />
+
+            <com.hyzs.onekeyhelp.widget.RoundImageView
+                android:layout_width="@dimen/x100"
+                android:layout_height="@dimen/y100"
+                android:layout_marginLeft="@dimen/x18"
+                android:scaleType="centerCrop"
+                android:id="@+id/fragment_live_help_me_have_imageView2"
+                android:src="@mipmap/talk"/>
+            <com.hyzs.onekeyhelp.widget.RoundImageView
+                android:layout_width="@dimen/x100"
+                android:layout_height="@dimen/y100"
+                android:layout_marginLeft="@dimen/x18"
+                android:scaleType="centerCrop"
+                android:id="@+id/fragment_live_help_me_have_imageView3"
+                android:src="@mipmap/talk"/>
+
+
+            <com.hyzs.onekeyhelp.widget.RoundImageView
+                android:layout_width="@dimen/x100"
+                android:layout_height="@dimen/y100"
+                android:layout_marginLeft="@dimen/x18"
+                android:id="@+id/fragment_live_help_me_have_imageView4"
+                android:src="@mipmap/talk"/>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/x20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x40"
+            >
+
+            <TextView
+                android:layout_toRightOf="@+id/fragment_live_help_me_have_iv_face"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fragment_live_help_me_have_number"
+                android:text="125人接受求助"
+                android:singleLine="false"
+                android:textColor="#556666"
+                android:textSize="@dimen/x26"
+                android:lineSpacingExtra="@dimen/x16"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fragment_live_help_me_have_time"
+                android:text="3-7 11:25"
+                android:textColor="#556666"
+                android:singleLine="false"
+                android:textSize="@dimen/x26"
+                android:lineSpacingExtra="@dimen/y16"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_alignBaseline="@+id/fragment_live_help_me_have_number"
+                android:layout_alignBottom="@+id/fragment_live_help_me_have_number"
+                android:layout_toRightOf="@+id/live_fragment_my_help_list_tv_zheng"
+                android:layout_toEndOf="@+id/live_fragment_my_help_list_tv_zheng" />
+
+
+            <LinearLayout
+                android:layout_width="@dimen/x98"
+                android:layout_height="@dimen/y49"
+                android:orientation="horizontal"
+                android:id="@+id/fragment_live_help_me_have_toXQ"
+                android:background="@drawable/shape_live_my_help"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/x110"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="详情"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="@dimen/x12"
+                    android:textSize="@dimen/x26"
+                    android:id="@+id/textView13" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/youjiantou"
+                    android:textColor="@android:color/white"
+                    android:layout_marginLeft="@dimen/x10"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e2e2e2"
+        android:layout_below="@+id/fragment_live_help_me_have_ll_wrap"
+        android:layout_marginTop="@dimen/x20"
+        android:layout_marginLeft="@dimen/x20"
+        />
+
+    <TextView
+        android:id="@+id/live_fragment_my_help_list_tv_zheng"
+        android:layout_width="@dimen/x30"
+        android:layout_height="@dimen/x30"
+        android:background="@drawable/shape_15b521_2"
+        android:text="证"
+        android:textColor="@color/color_f"
+        android:layout_marginLeft="@dimen/x10"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/x20"
+        android:textSize="@dimen/y20"
+        android:layout_alignBottom="@+id/fragment_live_help_me_have_iv_idcard"
+        android:layout_toRightOf="@+id/fragment_live_help_me_have_iv_idcard"
+        android:layout_toEndOf="@+id/fragment_live_help_me_have_iv_idcard" />
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><shape>
+
+            <!-- 描边 -->
+
+            <solid android:color="#ffffff" />
+            <!-- 圆角 -->
+
+        </shape></item>
+    <item android:state_focused="true"><shape>
+
+            <!-- 描边 -->
+
+            <solid android:color="#ffffff" />
+            <!-- 圆角 -->
+
+        </shape></item>
+    <item><shape>
+
+            <!-- 描边 -->
+
+            <solid android:color="#ffffff" />
+            <!-- 圆角 -->
+
+        </shape></item>
+
+</selector>

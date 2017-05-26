@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name" translatable="false">"环宇帮帮"</string>
+    <string name="company_name" translatable="false">"环宇智盛 (北京) 网络技术有限公司"</string>
+    <string name="live_fragment_my_help_list_tv_info" translatable="false">"向您发送了一个求助信息"</string>
+    <string-array name="right_type">
+        <item>生活求助</item>
+        <item>车辆救援</item>
+        <item>救援大队</item>
+        <item>周末生活</item>
+        <item>周边组团游</item>
+        <item>社区活动</item>
+        <item>兴趣圈</item>
+        <item>医疗圈</item>
+        <item>社区圈</item>
+        <item>宠物圈</item>
+        <item>服务圈</item>
+        <item>旅游圈</item>
+        <item>购物圈</item>
+        <item>社区公告</item>
+        <item>热点新闻</item>
+        <item>保健资讯</item>
+        <item>失物招领</item>
+        <item>养生专题</item>
+        <item>健康问答</item>
+        <item>风光展示</item>
+    </string-array>
+    <string-array name="home_function">
+        <item>生活求助</item>
+        <item>车辆救援</item>
+        <item>生活圈子</item>
+        <item>热点新闻</item>
+        <item>社区活动</item>
+        <item>社区医疗</item>
+        <item>生活服务</item>
+        <item>语音记账</item>
+    </string-array>
+</resources>

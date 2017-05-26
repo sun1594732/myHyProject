@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/live_fragment_my_help_list_tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_titless"
+        android:layout_marginTop="@dimen/y20"
+        android:layout_toRightOf="@+id/live_fragment_my_help_list_iv_face"
+        android:lineSpacingExtra="@dimen/x16"
+        android:singleLine="false"
+        android:text="@string/live_fragment_my_help_list_tv_info"
+        android:textColor="#666666"
+        android:textSize="@dimen/x30" />
+
+    <TextView
+        android:id="@+id/live_fragment_my_help_list_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/live_fragment_my_help_list_tv_info"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_toRightOf="@+id/live_fragment_my_help_list_iv_face"
+        android:text="3-7 11:15"
+        android:textColor="#666666"
+        android:textSize="@dimen/y26" />
+
+    <TextView
+        android:id="@+id/live_fragment_my_help_list_tv_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/live_fragment_my_help_list_tv_info"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginTop="@dimen/x10"
+        android:layout_toRightOf="@+id/live_fragment_my_help_list_tv_time"
+        android:text="等待帮助 ...."
+        android:textColor="#666666"
+        android:textSize="@dimen/y26" />
+
+    <TextView
+        android:id="@+id/live_fragment_my_help_list_tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/live_fragment_my_help_list_tv_info"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/y10"
+        android:layout_toRightOf="@+id/live_fragment_my_help_list_tv_state"
+        android:gravity="right"
+        android:text="康惠园小区"
+        android:textColor="#666666"
+        android:textSize="@dimen/y26" />
+
+    <com.hyzs.onekeyhelp.widget.RoundImageView
+        android:id="@+id/live_fragment_my_help_list_iv_face"
+        android:layout_width="@dimen/x120"
+        android:layout_height="@dimen/x120"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/y20"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/y23"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_replace"
+        app:civ_border_color="@color/color_6"
+        app:civ_border_width="@dimen/x1" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/live_fragment_my_help_list_read"
+        android:layout_width="@dimen/x20"
+        android:layout_height="@dimen/x20"
+        android:layout_marginLeft="@dimen/x25"
+        android:layout_marginTop="@dimen/x25"
+        android:src="@color/color_f81302" />
+
+    <LinearLayout
+        android:id="@+id/toXQ"
+        android:layout_width="@dimen/x98"
+        android:layout_height="@dimen/y49"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/x30"
+        android:layout_marginTop="@dimen/y46"
+        android:background="@drawable/shape_live_my_help"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x12"
+            android:text="详情"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/x26" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10"
+            android:background="@drawable/youjiantou"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:layout_below="@+id/live_fragment_my_help_list_tv_state"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_marginTop="@dimen/x10"
+        android:background="#e2e2e2" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_titless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/live_fragment_my_help_list_iv_face"
+        android:layout_toRightOf="@+id/live_fragment_my_help_list_iv_face"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:id="@+id/live_fragment_my_help_list_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x20"
+            android:text="白富美"
+            android:textColor="@color/color_6"
+            android:textSize="@dimen/y34"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/live_fragment_my_help_list_iv_idcard"
+            android:layout_width="@dimen/x50"
+            android:layout_height="@dimen/x35"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/x3"
+            android:layout_marginLeft="@dimen/x8"
+            android:background="@mipmap/identity" />
+
+        <TextView
+            android:id="@+id/live_fragment_my_help_list_tv_zheng"
+            android:layout_width="@dimen/x30"
+            android:layout_height="@dimen/x30"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/x2"
+            android:layout_marginLeft="@dimen/x10"
+
+            android:background="@drawable/shape_15b521_2"
+            android:gravity="center"
+            android:text="证"
+            android:textColor="@color/color_f"
+            android:textSize="@dimen/y20"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+</RelativeLayout>

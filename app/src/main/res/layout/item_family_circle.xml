@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_family_circle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_f"
+    android:orientation="horizontal">
+
+    <com.hyzs.onekeyhelp.widget.RoundImageView
+        android:id="@+id/item_family_circle_icon"
+        android:layout_width="@dimen/x100"
+        android:layout_height="@dimen/x100"
+        android:layout_margin="@dimen/x30"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_replace" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x25"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginRight="@dimen/x30"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_family_circle_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张女士"
+                android:textColor="@color/color_3"
+                android:textSize="@dimen/y34" />
+
+            <ImageView
+                android:id="@+id/item_family_circle_identity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x10"
+                android:src="@mipmap/identity" />
+
+
+            <TextView
+                android:id="@+id/item_family_circle_zheng"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:layout_marginLeft="@dimen/x10"
+                android:background="@drawable/shape_f81302_zheng"
+                android:paddingBottom="@dimen/x2"
+                android:paddingLeft="@dimen/x6"
+                android:paddingRight="@dimen/x6"
+                android:paddingTop="@dimen/x2"
+                android:text="证"
+                android:textColor="@color/color_f"
+                android:textSize="@dimen/y20"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/item_contact_list_markContainer_shang"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:layout_marginLeft="@dimen/x10"
+                android:background="@drawable/shape_dd4337_8"
+                android:paddingBottom="@dimen/x2"
+                android:paddingLeft="@dimen/x6"
+                android:paddingRight="@dimen/x6"
+                android:paddingTop="@dimen/x2"
+                android:text="商"
+                android:textColor="@color/color_f"
+                android:textSize="@dimen/y20"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/item_contact_list_markContainer_fu"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/x30"
+                android:layout_marginLeft="@dimen/x10"
+                android:background="@drawable/shape_15b521_2"
+                android:paddingBottom="@dimen/x2"
+                android:paddingLeft="@dimen/x6"
+                android:paddingRight="@dimen/x6"
+                android:paddingTop="@dimen/x2"
+                android:text="服"
+                android:textColor="@color/color_f"
+                android:textSize="@dimen/y20"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/item_contact_list_markContainer_wu"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:layout_marginLeft="@dimen/x10"
+                android:background="@drawable/shape_d8711e_3"
+                android:paddingBottom="@dimen/x2"
+                android:paddingLeft="@dimen/x6"
+                android:paddingRight="@dimen/x6"
+                android:paddingTop="@dimen/x2"
+                android:text="物"
+                android:textColor="@color/color_f"
+                android:textSize="@dimen/y20"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/item_contact_list_markContainer_jiu"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:layout_marginLeft="@dimen/x10"
+                android:background="@drawable/shape_0_f4_solid"
+                android:paddingBottom="@dimen/x2"
+                android:paddingLeft="@dimen/x6"
+                android:paddingRight="@dimen/x6"
+                android:paddingTop="@dimen/x2"
+                android:text="救"
+                android:textColor="@color/color_f"
+                android:textSize="@dimen/y20"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/item_contact_list_markContainer_ke"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:layout_marginLeft="@dimen/x10"
+                android:background="@drawable/shape_15b521_2"
+                android:paddingBottom="@dimen/x2"
+                android:paddingLeft="@dimen/x6"
+                android:paddingRight="@dimen/x6"
+                android:paddingTop="@dimen/x2"
+                android:text="客"
+                android:textColor="@color/color_f"
+                android:textSize="@dimen/y20"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/item_contact_list_markContainer_jie"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:layout_marginLeft="@dimen/x10"
+                android:background="@drawable/shape_f751c6"
+                android:paddingBottom="@dimen/x2"
+                android:paddingLeft="@dimen/x6"
+                android:paddingRight="@dimen/x6"
+                android:paddingTop="@dimen/x2"
+                android:text="街"
+                android:textColor="@color/color_f"
+                android:textSize="@dimen/y20"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/item_contact_list_markContainer_lin"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:layout_marginLeft="@dimen/x10"
+                android:background="@drawable/shape_1ccd9b_6_soild"
+                android:paddingBottom="@dimen/x2"
+                android:paddingLeft="@dimen/x6"
+                android:paddingRight="@dimen/x6"
+                android:paddingTop="@dimen/x2"
+                android:text="邻"
+                android:textColor="@color/color_f"
+                android:textSize="@dimen/y20"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/item_contact_list_markContainer_jin"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:layout_marginLeft="@dimen/x10"
+                android:background="@drawable/shape_f9404a"
+                android:paddingBottom="@dimen/x2"
+                android:paddingLeft="@dimen/x6"
+                android:paddingRight="@dimen/x6"
+                android:paddingTop="@dimen/x2"
+                android:text="紧"
+                android:textColor="@color/color_f"
+                android:textSize="@dimen/y20"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/item_contact_list_markContainer_wei"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:layout_marginLeft="@dimen/x10"
+                android:background="@drawable/shape_408ff9"
+                android:paddingBottom="@dimen/x2"
+                android:paddingLeft="@dimen/x6"
+                android:paddingRight="@dimen/x6"
+                android:paddingTop="@dimen/x2"
+                android:text="委"
+                android:textColor="@color/color_f"
+                android:textSize="@dimen/y20"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/item_contact_list_markContainer_jia"
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:layout_marginLeft="@dimen/x10"
+                android:background="@drawable/shape_f96840"
+                android:paddingBottom="@dimen/x2"
+                android:paddingLeft="@dimen/x6"
+                android:paddingRight="@dimen/x6"
+                android:paddingTop="@dimen/x2"
+                android:text="家"
+                android:textColor="@color/color_f"
+                android:textSize="@dimen/y20"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/item_family_circle_type"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/color_3"
+                android:textSize="@dimen/y30"
+                android:gravity="right"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_family_circle_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x20"
+            android:layout_marginTop="@dimen/x15"
+            android:layout_marginRight="@dimen/x30"
+            android:lineSpacingMultiplier="1.3"
+            android:text="今天天气真不错。感觉自己萌萌哒~！"
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/y30" />
+
+        <LinearLayout
+            android:id="@+id/item_family_circle_img_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.hyzs.onekeyhelp.widget.RoundImageView
+                android:id="@+id/item_family_circle_img1"
+                android:layout_width="@dimen/x120"
+                android:layout_height="@dimen/x120"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+
+            <com.hyzs.onekeyhelp.widget.RoundImageView
+                android:id="@+id/item_family_circle_img2"
+                android:layout_width="@dimen/x120"
+                android:layout_height="@dimen/x120"
+                android:layout_marginLeft="@dimen/x10"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+
+            <com.hyzs.onekeyhelp.widget.RoundImageView
+                android:id="@+id/item_family_circle_img3"
+                android:layout_width="@dimen/x120"
+                android:layout_height="@dimen/x120"
+                android:layout_marginLeft="@dimen/x10"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+
+            <com.hyzs.onekeyhelp.widget.RoundImageView
+                android:id="@+id/item_family_circle_img4"
+                android:layout_width="@dimen/x120"
+                android:layout_height="@dimen/x120"
+                android:layout_marginLeft="@dimen/x10"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x20"
+            android:layout_marginTop="@dimen/x20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_family_circle_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017-4-1"
+                android:textColor="@color/color_3"
+                android:textSize="@dimen/y26" />
+
+            <TextView
+                android:id="@+id/item_family_circle_imgSum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x28"
+                android:layout_weight="1"
+                android:text="共9张"
+                android:textColor="@color/color_3"
+                android:textSize="@dimen/y26" />
+
+            <TextView
+                android:id="@+id/item_family_circle_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x30"
+                android:drawableLeft="@mipmap/dianzan"
+                android:drawablePadding="@dimen/x10"
+                android:text="999"
+                android:textColor="@color/color_9"
+                android:textSize="@dimen/y26" />
+
+            <TextView
+                android:id="@+id/item_family_circle_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x30"
+                android:drawableLeft="@mipmap/pinglun"
+                android:drawablePadding="@dimen/x10"
+                android:text="999"
+                android:textColor="@color/color_9"
+                android:textSize="@dimen/y26" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/item_family_circle_comment_list"
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_dddddd">
+
+        </ListView>
+    </LinearLayout>
+</LinearLayout>

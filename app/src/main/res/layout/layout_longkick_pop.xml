@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="@dimen/x568"
+    android:layout_height="@dimen/x348"
+    android:background="@drawable/longkick_pop_bg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x74"
+        android:text="查看"
+        android:textColor="@color/color_3"
+        android:textSize="@dimen/y26"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x54"
+        android:id="@+id/longkick_pop_info" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/color_d2c"
+        android:layout_marginLeft="@dimen/x42"
+        android:layout_marginRight="@dimen/x15"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x74"
+        android:text="设为紧急联系人"
+        android:textColor="@color/color_3"
+        android:textSize="@dimen/y26"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x54"
+        android:id="@+id/longkick_pop_setUrgent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/color_d2c"
+        android:layout_marginLeft="@dimen/x42"
+        android:layout_marginRight="@dimen/x15"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/longkick_pop_ll1"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x66"
+        android:text="修改资料"
+        android:textColor="@color/color_3"
+        android:textSize="@dimen/y26"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x54" />
+
+    <View
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/color_d2c"
+        android:layout_marginLeft="@dimen/x42"
+        android:layout_marginRight="@dimen/x15"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/longkick_pop_ll2"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/longkick_pop_delete"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x66"
+        android:text="删除"
+        android:textColor="@color/color_3"
+        android:textSize="@dimen/y26"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x54" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/color_d2c"
+        android:layout_marginLeft="@dimen/x42"
+        android:layout_marginRight="@dimen/x15"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/longkick_pop_remove"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x66"
+        android:text="移动至分组"
+        android:textColor="@color/color_3"
+        android:textSize="@dimen/y26"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x54" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/color_d2c"
+        android:layout_marginLeft="@dimen/x42"
+        android:layout_marginRight="@dimen/x15"/>
+
+    <TextView
+        android:id="@+id/longkick_pop_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x74"
+        android:text="返回"
+        android:textColor="@color/color_3"
+        android:textSize="@dimen/y26"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x54" />
+</LinearLayout>

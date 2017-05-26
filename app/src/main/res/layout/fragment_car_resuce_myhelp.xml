@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    
+    >
+
+    <com.hyzs.onekeyhelp.widget.view.VRefresh
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/car_fragment_my_help_list_fresh"
+        >
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/gragment_car_resuce_help_iv_info"
+        />
+    </com.hyzs.onekeyhelp.widget.view.VRefresh>
+    <TextView
+        android:id="@+id/gragment_car_resuce_help_tv_send_help"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x80"
+        android:background="#1ccd98"
+        android:layout_gravity="bottom"
+        android:text="发布援助"
+        android:gravity="center"
+        android:textSize="@dimen/y30"
+        />
+
+</LinearLayout>

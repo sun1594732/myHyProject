@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x240"
+    android:background="@color/color_f"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="@dimen/x1"
+        android:layout_height="@dimen/x240"
+        android:background="@color/color_2d2d2d" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/x20"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_home_news_title"
+            style="@style/y30text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="@dimen/x25"
+            android:ellipsize="end"
+            android:lineSpacingMultiplier="1.3"
+            android:maxLines="2"
+            android:text="TextView"
+            android:textColor="@color/color_3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/item_home_news_time"
+            style="@style/y26text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x60"
+            android:drawableLeft="@mipmap/sy_shijian"
+            android:drawablePadding="@dimen/x10"
+            android:text="TextView"
+            android:textColor="@color/color_9" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x20"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="@dimen/x10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.hyzs.onekeyhelp.widget.RoundImageView
+                android:id="@+id/item_home_news_author_icon"
+                android:layout_width="@dimen/x40"
+                android:layout_height="@dimen/x40"
+                android:layout_marginTop="@dimen/x4"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/replace_hybb" />
+
+            <TextView
+                android:id="@+id/item_home_news_author"
+                style="@style/y26text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/x10"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginTop="@dimen/x8"
+                android:paddingLeft="@dimen/x20"
+                android:text="TextView"
+                android:textColor="@color/color_9" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/x30">
+
+        <com.hyzs.onekeyhelp.widget.RoundImageView
+            android:id="@+id/item_home_news_pic"
+            android:layout_width="@dimen/x180"
+            android:layout_height="@dimen/x140"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/x30"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/replace_hybb" />
+
+        <TextView
+            android:id="@+id/item_home_news_picCount"
+            android:layout_width="@dimen/x50"
+            android:layout_height="@dimen/x26"
+            android:layout_alignRight="@+id/item_home_news_pic"
+            android:layout_alignTop="@+id/item_home_news_pic"
+            android:layout_margin="@dimen/x6"
+            android:background="#5f000000"
+            android:drawableLeft="@mipmap/sy_dongtai"
+            android:drawablePadding="@dimen/x6"
+            android:paddingLeft="@dimen/x6"
+            android:text="0"
+            android:textSize="@dimen/y20" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_home_news_notification"
+            android:layout_width="@dimen/x20"
+            android:layout_height="@dimen/x20"
+            android:layout_marginLeft="@dimen/x170"
+            android:layout_marginTop="@dimen/x24"
+            android:src="@color/color_ef1111"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/item_home_news_up"
+            style="@style/y26text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_home_news_pic"
+            android:layout_marginTop="@dimen/x18"
+            android:drawableLeft="@mipmap/sy_dianzan"
+            android:drawablePadding="@dimen/x10"
+            android:text="0"
+            android:textColor="@color/color_9" />
+
+        <TextView
+            android:id="@+id/item_home_news_comment"
+            style="@style/y26text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/item_home_news_up"
+            android:layout_alignRight="@+id/item_home_news_pic"
+            android:layout_marginTop="@dimen/x18"
+            android:drawableLeft="@mipmap/sy_pinglun"
+            android:drawablePadding="@dimen/x10"
+            android:text="0"
+            android:textColor="@color/color_9" />
+    </RelativeLayout>
+</LinearLayout>

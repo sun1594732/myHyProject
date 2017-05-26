@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.hyzs.onekeyhelp.widget.view.VRefresh
+            android:id="@+id/home_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.hyzs.onekeyhelp.widget.MyScrollView
+                android:id="@+id/fragment_home_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <com.hyzs.onekeyhelp.widget.CarouselView
+                        android:id="@+id/fragment_home_vp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x350" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/x380"
+                            android:layout_marginBottom="@dimen/x34"
+                            android:layout_marginTop="@dimen/x10"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="@dimen/x180"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/fragment_home_help"
+                                        style="@style/y30text"
+                                        android:layout_width="@dimen/x180"
+                                        android:layout_height="match_parent"
+                                        android:drawablePadding="@dimen/x20"
+                                        android:drawableTop="@mipmap/yiliao"
+                                        android:gravity="center_horizontal"
+                                        android:paddingTop="@dimen/x24"
+                                        android:text="生活求助"
+                                        android:textColor="@color/color_3" />
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/fragment_home_help_badge"
+                                        android:layout_width="@dimen/x24"
+                                        android:layout_height="@dimen/x24"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginRight="@dimen/x26"
+                                        android:layout_marginTop="@dimen/x16"
+                                        android:src="@color/color_ef1111"
+                                        android:visibility="invisible" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/fragment_home_active"
+                                        style="@style/y30text"
+                                        android:layout_width="@dimen/x180"
+                                        android:layout_height="match_parent"
+                                        android:drawablePadding="@dimen/x20"
+                                        android:drawableTop="@mipmap/huodong_home"
+                                        android:gravity="center_horizontal"
+                                        android:paddingTop="@dimen/x24"
+                                        android:text="社区活动"
+                                        android:textColor="@color/color_3" />
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/fragment_home_active_badge"
+                                        android:layout_width="@dimen/x24"
+                                        android:layout_height="@dimen/x24"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginRight="@dimen/x26"
+                                        android:layout_marginTop="@dimen/x16"
+                                        android:src="@color/color_ef1111"
+                                        android:visibility="invisible" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/x180"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/fragment_home_rescue"
+                                        style="@style/y30text"
+                                        android:layout_width="@dimen/x180"
+                                        android:layout_height="match_parent"
+                                        android:drawablePadding="@dimen/x20"
+                                        android:drawableTop="@mipmap/jiuyuan"
+                                        android:gravity="center_horizontal"
+                                        android:paddingTop="@dimen/x24"
+                                        android:text="车辆救援"
+                                        android:textColor="@color/color_3" />
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/fragment_home_rescue_badge"
+                                        android:layout_width="@dimen/x24"
+                                        android:layout_height="@dimen/x24"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginRight="@dimen/x26"
+                                        android:layout_marginTop="@dimen/x16"
+                                        android:src="@color/color_ef1111"
+                                        android:visibility="invisible" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/fragment_home_community"
+                                        style="@style/y30text"
+                                        android:layout_width="@dimen/x180"
+                                        android:layout_height="match_parent"
+                                        android:drawablePadding="@dimen/x20"
+                                        android:drawableTop="@mipmap/shequ_home"
+                                        android:gravity="center_horizontal"
+                                        android:paddingTop="@dimen/x24"
+                                        android:text="社区医疗"
+                                        android:textColor="@color/color_3" />
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/fragment_home_community_badge"
+                                        android:layout_width="@dimen/x24"
+                                        android:layout_height="@dimen/x24"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginRight="@dimen/x26"
+                                        android:layout_marginTop="@dimen/x16"
+                                        android:src="@color/color_ef1111"
+                                        android:visibility="invisible" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/x180"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/fragment_home_circle"
+                                        style="@style/y30text"
+                                        android:layout_width="@dimen/x180"
+                                        android:layout_height="match_parent"
+                                        android:drawablePadding="@dimen/x20"
+                                        android:drawableTop="@mipmap/quanzi_home"
+                                        android:gravity="center_horizontal"
+                                        android:paddingTop="@dimen/x24"
+                                        android:text="生活圈子"
+                                        android:textColor="@color/color_3" />
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/fragment_home_circle_badge"
+                                        android:layout_width="@dimen/x24"
+                                        android:layout_height="@dimen/x24"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginRight="@dimen/x26"
+                                        android:layout_marginTop="@dimen/x16"
+                                        android:src="@color/color_ef1111"
+                                        android:visibility="invisible" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/fragment_home_service"
+                                        style="@style/y30text"
+                                        android:layout_width="@dimen/x180"
+                                        android:layout_height="match_parent"
+                                        android:drawablePadding="@dimen/x20"
+                                        android:drawableTop="@mipmap/fuwu"
+                                        android:gravity="center_horizontal"
+                                        android:paddingTop="@dimen/x24"
+                                        android:text="生活服务"
+                                        android:textColor="@color/color_3" />
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/fragment_home_service_badge"
+                                        android:layout_width="@dimen/x24"
+                                        android:layout_height="@dimen/x24"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginRight="@dimen/x26"
+                                        android:layout_marginTop="@dimen/x16"
+                                        android:src="@color/color_ef1111"
+                                        android:visibility="invisible" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/x180"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/fragment_home_news"
+                                        style="@style/y30text"
+                                        android:layout_width="@dimen/x180"
+                                        android:layout_height="match_parent"
+                                        android:drawablePadding="@dimen/x20"
+                                        android:drawableTop="@mipmap/xinwen"
+                                        android:gravity="center_horizontal"
+                                        android:paddingTop="@dimen/x24"
+                                        android:text="热点新闻"
+                                        android:textColor="@color/color_3" />
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/fragment_home_news_badge"
+                                        android:layout_width="@dimen/x24"
+                                        android:layout_height="@dimen/x24"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginRight="@dimen/x26"
+                                        android:layout_marginTop="@dimen/x16"
+                                        android:src="@color/color_ef1111"
+                                        android:visibility="invisible" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/fragment_home_forum"
+                                        style="@style/y30text"
+                                        android:layout_width="@dimen/x180"
+                                        android:layout_height="match_parent"
+                                        android:drawablePadding="@dimen/x20"
+                                        android:drawableTop="@mipmap/luntan"
+                                        android:gravity="center_horizontal"
+                                        android:paddingTop="@dimen/x24"
+                                        android:text="论坛"
+                                        android:textColor="@color/color_3" />
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/fragment_home_forum_badge"
+                                        android:layout_width="@dimen/x24"
+                                        android:layout_height="@dimen/x24"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginRight="@dimen/x26"
+                                        android:layout_marginTop="@dimen/x16"
+                                        android:src="@color/color_ef1111"
+                                        android:visibility="invisible" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/x180"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/fragment_home_troop_badge"
+                                        android:layout_width="@dimen/x24"
+                                        android:layout_height="@dimen/x24"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginRight="@dimen/x26"
+                                        android:layout_marginTop="@dimen/x16"
+                                        android:src="@color/color_ef1111"
+                                        android:visibility="invisible" />
+
+                                    <TextView
+                                        android:id="@+id/fragment_home_troop"
+                                        style="@style/y30text"
+                                        android:layout_width="@dimen/x180"
+                                        android:layout_height="match_parent"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_alignParentStart="true"
+                                        android:layout_alignParentTop="true"
+                                        android:drawablePadding="@dimen/x20"
+                                        android:drawableTop="@mipmap/sy_jiuyuandadui"
+                                        android:gravity="center_horizontal"
+                                        android:paddingTop="@dimen/x24"
+                                        android:text="救援大队"
+                                        android:textColor="@color/color_3" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/fragment_home_answer"
+                                        style="@style/y30text"
+                                        android:layout_width="@dimen/x180"
+                                        android:layout_height="match_parent"
+                                        android:drawablePadding="@dimen/x20"
+                                        android:drawableTop="@mipmap/sy_jiankangwenda"
+                                        android:gravity="center_horizontal"
+                                        android:paddingTop="@dimen/x24"
+                                        android:text="健康问答"
+                                        android:textColor="@color/color_3" />
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/fragment_home_answer_badge"
+                                        android:layout_width="@dimen/x24"
+                                        android:layout_height="@dimen/x24"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginRight="@dimen/x26"
+                                        android:layout_marginTop="@dimen/x16"
+                                        android:src="@color/color_ef1111"
+                                        android:visibility="invisible" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/x180"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/fragment_home_post"
+                                        style="@style/y30text"
+                                        android:layout_width="@dimen/x180"
+                                        android:layout_height="match_parent"
+                                        android:drawablePadding="@dimen/x20"
+                                        android:drawableTop="@mipmap/sy_sheqvgonggao"
+                                        android:gravity="center_horizontal"
+                                        android:paddingTop="@dimen/x24"
+                                        android:text="社区公告"
+                                        android:textColor="@color/color_3" />
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/fragment_home_post_badge"
+                                        android:layout_width="@dimen/x24"
+                                        android:layout_height="@dimen/x24"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginRight="@dimen/x26"
+                                        android:layout_marginTop="@dimen/x16"
+                                        android:src="@color/color_ef1111"
+                                        android:visibility="invisible" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/fragment_home_life"
+                                        style="@style/y30text"
+                                        android:layout_width="@dimen/x180"
+                                        android:layout_height="match_parent"
+                                        android:drawablePadding="@dimen/x20"
+                                        android:drawableTop="@mipmap/sy_zhoumoshenghuo"
+                                        android:gravity="center_horizontal"
+                                        android:paddingTop="@dimen/x24"
+                                        android:text="周末生活"
+                                        android:textColor="@color/color_3" />
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/fragment_home_life_badge"
+                                        android:layout_width="@dimen/x24"
+                                        android:layout_height="@dimen/x24"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginRight="@dimen/x26"
+                                        android:layout_marginTop="@dimen/x16"
+                                        android:src="@color/color_ef1111"
+                                        android:visibility="invisible" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/x180"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/fragment_home_healthInfo"
+                                        style="@style/y30text"
+                                        android:layout_width="@dimen/x180"
+                                        android:layout_height="match_parent"
+                                        android:drawablePadding="@dimen/x20"
+                                        android:drawableTop="@mipmap/sy_jiankangzixun"
+                                        android:gravity="center_horizontal"
+                                        android:paddingTop="@dimen/x24"
+                                        android:text="健康咨询"
+                                        android:textColor="@color/color_3" />
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/fragment_home_healthInfo_badge"
+                                        android:layout_width="@dimen/x24"
+                                        android:layout_height="@dimen/x24"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginRight="@dimen/x26"
+                                        android:layout_marginTop="@dimen/x16"
+                                        android:src="@color/color_ef1111"
+                                        android:visibility="invisible" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/fragment_home_display"
+                                        style="@style/y30text"
+                                        android:layout_width="@dimen/x180"
+                                        android:layout_height="match_parent"
+                                        android:drawablePadding="@dimen/x20"
+                                        android:drawableTop="@mipmap/sy_fengguangzhanshi"
+                                        android:gravity="center_horizontal"
+                                        android:paddingTop="@dimen/x24"
+                                        android:text="风光展示"
+                                        android:textColor="@color/color_3" />
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/fragment_home_display_badge"
+                                        android:layout_width="@dimen/x24"
+                                        android:layout_height="@dimen/x24"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginRight="@dimen/x26"
+                                        android:layout_marginTop="@dimen/x16"
+                                        android:src="@color/color_ef1111"
+                                        android:visibility="invisible" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="@dimen/x180"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/fragment_home_healthIssue"
+                                        style="@style/y30text"
+                                        android:layout_width="@dimen/x180"
+                                        android:layout_height="match_parent"
+                                        android:drawablePadding="@dimen/x20"
+                                        android:drawableTop="@mipmap/sy_yangshengzhuanti"
+                                        android:gravity="center_horizontal"
+                                        android:paddingTop="@dimen/x24"
+                                        android:text="养生专题"
+                                        android:textColor="@color/color_3" />
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/fragment_home_healthIssue_badge"
+                                        android:layout_width="@dimen/x24"
+                                        android:layout_height="@dimen/x24"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginRight="@dimen/x26"
+                                        android:layout_marginTop="@dimen/x16"
+                                        android:src="@color/color_ef1111"
+                                        android:visibility="invisible" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:id="@+id/fragment_home_travel"
+                                        style="@style/y30text"
+                                        android:layout_width="@dimen/x180"
+                                        android:layout_height="match_parent"
+                                        android:drawablePadding="@dimen/x20"
+                                        android:drawableTop="@mipmap/sy_zhoubianyou"
+                                        android:gravity="center_horizontal"
+                                        android:paddingTop="@dimen/x24"
+                                        android:text="周边组团游"
+                                        android:textColor="@color/color_3" />
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:id="@+id/fragment_home_travel_badge"
+                                        android:layout_width="@dimen/x24"
+                                        android:layout_height="@dimen/x24"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_marginRight="@dimen/x26"
+                                        android:layout_marginTop="@dimen/x16"
+                                        android:src="@color/color_ef1111"
+                                        android:visibility="invisible" />
+                                </RelativeLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x12"
+                        android:background="@color/color_f4" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x210"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/x10" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/x200"
+                            android:src="@mipmap/sy_guangao1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x70"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="@dimen/x4"
+                            android:layout_height="@dimen/x30"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/x20"
+                            android:background="@color/color_ff9600" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            style="@style/y34text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/x90"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/x20"
+                            android:paddingRight="@dimen/x30"
+                            android:text="社区明星"
+                            android:textColor="@color/color_ff9600" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/x1"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/x30"
+                            android:drawablePadding="@dimen/x10"
+                            android:drawableRight="@mipmap/youjiantou"
+                            android:text="更多"
+                            android:textColor="@color/color_9"
+                            android:textSize="@dimen/y26"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x2"
+                        android:background="@color/color_ff9600" />
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/fragment_home_hero_vp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x334" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x1"
+                        android:layout_marginTop="@dimen/x20"
+                        android:background="@color/color_d" />
+
+                    <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="@dimen/x30"-->
+                    <!--android:layout_marginTop="@dimen/x23"-->
+                    <!--android:text="近期帮助的人 "-->
+                    <!--android:textColor="@color/color_3"-->
+                    <!--android:textSize="@dimen/y26" />-->
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<android.support.v7.widget.RecyclerView-->
+                    <!--android:id="@+id/fragment_home_help_recycler"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginBottom="@dimen/x20"-->
+                    <!--android:layout_marginLeft="@dimen/x15"-->
+                    <!--android:layout_marginTop="@dimen/x14"-->
+                    <!--android:layout_weight="1" />-->
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:paddingLeft="@dimen/x24"-->
+                    <!--android:paddingRight="@dimen/x30"-->
+                    <!--android:src="@mipmap/youjiantou" />-->
+                    <!--</LinearLayout>-->
+
+                    <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/x12"-->
+                    <!--android:background="@color/color_f4" />-->
+
+                    <ViewStub
+                        android:id="@+id/fragment_home_viewstub_help"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout="@layout/layout_home_viewstub1" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x12"
+                        android:background="@color/color_f4" />
+
+                    <ViewStub
+                        android:id="@+id/fragment_home_viewstub_post"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout="@layout/layout_home_viewstub1" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x12"
+                        android:background="@color/color_f4" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x210"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/x10" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/x200"
+                            android:src="@mipmap/sy_guanggao2" />
+                    </LinearLayout>
+
+                    <ViewStub
+                        android:id="@+id/fragment_home_viewstub_active"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout="@layout/layout_home_viewstub1" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x12"
+                        android:background="@color/color_f4" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x210"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/x10" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/x200"
+                            android:src="@mipmap/sy_guanggao3" />
+                    </LinearLayout>
+
+                    <ViewStub
+                        android:id="@+id/fragment_home_viewstub_circle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout="@layout/layout_home_viewstub1" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x12"
+                        android:background="@color/color_f4" />
+
+
+                    <ViewStub
+                        android:id="@+id/fragment_home_viewstub_news"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout="@layout/layout_home_viewstub1" />
+                </LinearLayout>
+            </com.hyzs.onekeyhelp.widget.MyScrollView>
+        </com.hyzs.onekeyhelp.widget.view.VRefresh>
+
+        <ImageView
+            android:id="@+id/fragment_home_scroll_top"
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/x80"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="@dimen/x20"
+            android:padding="@dimen/x10"
+            android:src="@mipmap/sy_fanhuidingbu" />
+    </FrameLayout>
+</LinearLayout>

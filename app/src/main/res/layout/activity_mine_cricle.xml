@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mine_cricle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hyzs.onekeyhelp.mine.circle.MineCricleActivity">
+
+    <include layout="@layout/toolbar" />
+
+
+    <com.hyzs.onekeyhelp.widget.view.VRefresh
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cricle_vr"
+        >
+    <ListView
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/activity_mine_cirle_lv"
+        />
+    </com.hyzs.onekeyhelp.widget.view.VRefresh>
+
+</LinearLayout>
